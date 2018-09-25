@@ -83,8 +83,8 @@ class Percolation {
 		int toprow = index - n;
 		int bottomrow = index + n;
 		if (n == 1) {
-			connectOpenSites(toprow, index);
-			connectOpenSites(bottomrow, index);
+			wqu.union(top, index);
+			wqu.union(bottom, index);
 		}
 		if (bottomrow < size) { //bottom
 			connectOpenSites(index, bottomrow);
