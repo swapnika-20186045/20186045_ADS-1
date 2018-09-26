@@ -4,7 +4,6 @@
  */
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Collections;
 /**
  * Class for solution.
  */
@@ -46,11 +45,13 @@ public final class Solution {
         int i = 0;
         int j = 0;
         while (i < array1.length || j < array2.length) {
-            if (i < array1.length && j < array2.length && array1[i] < array2[j]) {
+            if (i < array1.length && j < array2.length
+                && array1[i] < array2[j]) {
                 array.add(array1[i]);
                 // System.out.println(array1[i]+" 51 "+ i +" "+j);
                 i++;
-            } else if (i < array1.length && j < array2.length && array1[i] >= array2[j]) {
+            } else if (i < array1.length && j < array2.length
+                && array1[i] >= array2[j]) {
                 array.add(array2[j]);
                 // System.out.println(array2[j]+" 55 "+ i +" "+j);
                 j++;
