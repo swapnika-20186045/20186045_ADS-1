@@ -1,3 +1,7 @@
+/**
+ *Sorted array.
+ *@author Swapnika Vakacharla.
+ */
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
