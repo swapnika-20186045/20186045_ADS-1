@@ -16,20 +16,19 @@ class ThreeSum {
      * Constructs the object.
      *
      * @param      arrayy   The arrayy
-     * @param      n     integer
      */
     ThreeSum(final int[] arrayy) {
         this.array = arrayy;
     }
     /**
-     * count of sum.
+     * to find sum of three elements.
      *
-     * @param      a integer
+     * @param      array  The array
      *
-     * @return  count
+     * @return     { description_of_the_return_value }
      */
     public int threeSum(final int[] array) {
-        BinarySearch bs = new BinarySearch(); 
+        BinarySearch bs = new BinarySearch();
         Arrays.sort(array);
         int count = 0;
         for (int i = 0; i < array.length; i++) {
