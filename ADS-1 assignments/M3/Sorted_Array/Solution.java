@@ -45,22 +45,26 @@ public final class Solution {
         // }
         int i = 0;
         int j = 0;
-        while (i < array1.length+1 && j < array2.length+1) {
+        while (i < array1.length || j < array2.length) {
             if (i < array1.length && j < array2.length && array1[i] < array2[j]) {
                 array.add(array1[i]);
+                // System.out.println(array1[i]+" 51 "+ i +" "+j);
                 i++;
             } else if (i < array1.length && j < array2.length && array1[i] >= array2[j]) {
                 array.add(array2[j]);
+                // System.out.println(array2[j]+" 55 "+ i +" "+j);
                 j++;
             } else if (i >= array1.length) {
                 while (j < array2.length) {
                     array.add(array2[j]);
+                    // System.out.println(array2[j]+" 60 "+ i +" "+j);
                     j++; 
                 }
             } else if (j >= array2.length) {
                 while (i < array1.length) {
                     array.add(array1[i]);
-                    i++; 
+                    // System.out.println(array1[i]+" 66 "+ i +" "+j);
+                    i++;
                 }
             }
         }
