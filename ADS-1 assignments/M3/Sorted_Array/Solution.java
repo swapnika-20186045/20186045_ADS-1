@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 class Sortedarray {
-	public static boolean containsKey(ArrayList<Integer> array, int key) {
+	public boolean containsKey(ArrayList<Integer> array, int key) {
 		for (int i = 0; i < array.size(); i++) {
 			if (array.get(i) == key) {
 				return true;
@@ -10,7 +10,7 @@ class Sortedarray {
 		}
 		return false;
 	}
-	public static boolean containsKey(int array[], int key) {
+	public boolean containsKey(int array[], int key) {
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] == key) {
 				return true;
@@ -18,7 +18,7 @@ class Sortedarray {
 		}
 		return false;
 	}
-	public static ArrayList<Integer> Sortedarray(int[] array1, int[] array2) {
+	public ArrayList<Integer> sortedArray(int[] array1, int[] array2) {
 		ArrayList<Integer> result = new ArrayList<>();
 		// int array1[];
 		// int array2[];
@@ -40,20 +40,28 @@ class Sortedarray {
 		Collections.sort(result);
 		return result;
 	}
-	public static void main(String[] args) {
+}
+class Solution {
+	Solution() {
+		//not used
+	}
+	public static void main(final String[] args) {
 		Scanner input = new Scanner(System.in);
-		int n1 = input.nextInt();
-		int n2 = input.nextInt();
-		int array1[] = new int[n1];
-		int array2[] = new int[n2];
+		Sortedarray s = new Sortedarray();
+		int n1 = Integer.parseInt(input.nextLine());
+		int n2 = Integer.parseInt(input.nextLine());
+		String[] array1temp = input.nextLine().split(",");
+		String[] array2temp = input.nextLine().split(",");
 		ArrayList<Integer> array = new ArrayList<>();
+		int[] array1 = new int[n1];
+		int[] array2 = new int[n2];
 		for (int i = 0; i < n1; i++) {
-			array1[i] = input.nextInt();
+			array1[i] = Integer.parseInt(array1temp[i]);
 		}
 		for (int i = 0; i < n2; i++) {
-			array2[i] = input.nextInt();
+			array2[i] = Integer.parseInt(array2temp[i]);
 		}
-		System.out.println(Sortedarray(array1, array2));
+		System.out.println(s.sortedArray(array1, array2));
 	}
 }
 
