@@ -59,7 +59,7 @@ public final class Solution {
                 while (j < array2.length) {
                     array.add(array2[j]);
                     // System.out.println(array2[j]+" 60 "+ i +" "+j);
-                    j++; 
+                    j++;
                 }
             } else if (j >= array2.length) {
                 while (i < array1.length) {
