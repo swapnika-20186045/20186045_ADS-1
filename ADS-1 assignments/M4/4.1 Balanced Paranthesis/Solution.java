@@ -5,7 +5,7 @@ class Stack {
 		char item;
 		Node next;
 	}
-	private Node head = null;
+	Node head = null;
 	public void push(char p) {
 		Node lol = head;
 		head = new Node();
@@ -60,7 +60,7 @@ class BalancedParanthesis {
 				}
 			}
 		}
-		return true;
+		return s.head == null;
 	}
 }
 public final class Solution {
@@ -77,10 +77,10 @@ public final class Solution {
 		BalancedParanthesis bp = new BalancedParanthesis();
 		for (int i = 0; i < n; i++) {
 			if (bp.balance(strarray[i])) {
-				System.out.println("YES");				
+				System.out.println("YES");
 			} else {
 				System.out.println("NO");
 			}
 		}
-    }
+	}
 }
