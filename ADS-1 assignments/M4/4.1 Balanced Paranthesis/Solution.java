@@ -20,7 +20,10 @@ class Stack {
          */
         private Node next;
     }
-    Node head = null;
+    /**
+     * declaration of head.
+     */
+    public Node head = null;
     /**
      * push the elements.
      *
@@ -109,10 +112,21 @@ class BalancedParanthesis {
         return s.head == null;
     }
 }
+/**
+ * class for solution.
+ */
 public final class Solution {
-    Solution() {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
         //not used.
     }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
