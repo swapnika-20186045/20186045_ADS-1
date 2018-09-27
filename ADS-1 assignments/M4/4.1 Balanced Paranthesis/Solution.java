@@ -54,6 +54,11 @@ class Stack {
         return r;
         // }
     }
+    /**
+     * get the head.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Node gethead() {
         return head;
     }
@@ -147,3 +152,4 @@ public final class Solution {
         }
     }
 }
+
