@@ -23,7 +23,7 @@ class Stack {
     /**
      * declaration of head.
      */
-    public Node head = null;
+    private Node head = null;
     /**
      * push the elements.
      *
@@ -53,6 +53,9 @@ class Stack {
         head = head.next;
         return r;
         // }
+    }
+    public Node gethead() {
+        return head;
     }
     /**
      * Returns a string representation of the object.
@@ -109,7 +112,7 @@ class BalancedParanthesis {
                 }
             }
         }
-        return s.head == null;
+        return s.gethead() == null;
     }
 }
 /**
