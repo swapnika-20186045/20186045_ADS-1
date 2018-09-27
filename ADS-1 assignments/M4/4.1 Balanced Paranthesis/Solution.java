@@ -13,18 +13,18 @@ class Stack {
 		head.next = lol;
 	}
 	public char pop() {
-		if (head == null) {
-			return 'e';
-		}
-		if (head.next == null) {
-			char r = head.item;
-			head = null;
-			return r;
-		} else {
-			char r = head.item;
-			head = head.next;
-			return r;
-		}
+		// if (head == null) {
+		// 	return 'e';
+		// }
+		// if (head.next == null) {
+		// 	char r = head.item;
+		// 	head = null;
+		// 	return r;
+		// } else {
+		char r = head.item;
+		head = head.next;
+		return r;
+		// }
 	}
 	public String toString() {
 		String str = "";
@@ -46,7 +46,7 @@ class BalancedParanthesis {
 			// if (head == null) {
 			// 	return true;
 			// }
-			System.out.println(s);
+			System.out.println(s + " " + str.charAt(i));
 			if (str.charAt(i) == '[' || str.charAt(i) == '(' || str.charAt(i) == '{') {
 				s.push(str.charAt(i));
 			} else {
