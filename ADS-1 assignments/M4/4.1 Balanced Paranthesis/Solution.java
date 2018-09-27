@@ -13,9 +13,9 @@ class Stack {
 		head.next = lol;
 	}
 	public char pop() {
-		// if (head == null) {
-		// 	return 'e';
-		// }
+		if (head == null) {
+			return 'e';
+		}
 		// if (head.next == null) {
 		// 	char r = head.item;
 		// 	head = null;
@@ -46,14 +46,15 @@ class BalancedParanthesis {
 			// if (head == null) {
 			// 	return true;
 			// }
-			System.out.println(s + " " + str.charAt(i));
+			// System.out.println(s + " " + str.charAt(i));
 			if (str.charAt(i) == '[' || str.charAt(i) == '(' || str.charAt(i) == '{') {
 				s.push(str.charAt(i));
 			} else {
 				char ch = s.pop();
 				if ((ch == '(' && str.charAt(i) == ')') || (ch == '[' && str.charAt(i) == ']') || (ch == '{' && str.charAt(i) == '}')) {
-					ch = s.pop();
+					// ch = s.pop();
 					// System.out.println(ch + "39"+ str.charAt(i));
+					continue;
 				} else {
 					return false;
 				}
@@ -75,7 +76,11 @@ public final class Solution {
 		}
 		BalancedParanthesis bp = new BalancedParanthesis();
 		for (int i = 0; i < n; i++) {
-			System.out.println(bp.balance(strarray[i]));
+			if (bp.balance(strarray[i])) {
+				System.out.println("YES");				
+			} else {
+				System.out.println("NO");
+			}
 		}
     }
 }
