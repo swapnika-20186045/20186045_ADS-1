@@ -3,7 +3,17 @@
  * @author Swapnika Vakacharla.
  */
 import java.util.Scanner;
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
+    /**
+     * to convert numbers to digits.
+     *
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList numberToDigits(final String number) {
         LinkedList l = new LinkedList();
         String[] numarr = number.split("");
@@ -12,7 +22,13 @@ class AddLargeNumbers {
         }
         return l;
     }
-
+    /**
+     * to convert digits to numbers.
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String digitsToNumber(final LinkedList list) {
         String str = "";
         while (!list.isEmpty()) {
@@ -20,16 +36,25 @@ class AddLargeNumbers {
         }
         return str;
     }
-
-    // public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
-    //     // list1 = new LinkedList();
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return     { description_of_the_return_value }
+     */
+    // public static LinkedList addLargeNumbers(final LinkedList list1,
+    //     final LinkedList list2) {
+    //     l = new LinkedList();
     //     // list2 = new LinkedList();
+    //     return l;
     // }
 }
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -57,9 +82,12 @@ public class Solution {
         // case "addLargeNumbers":
         //     pDigits = AddLargeNumbers.numberToDigits(p);
         //     qDigits = AddLargeNumbers.numberToDigits(q);
-        //     LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+        //     LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits,
+        //         qDigits);
         //     System.out.println(AddLargeNumbers.digitsToNumber(result));
         //     break;
+        default :
+            break;
         }
     }
 
