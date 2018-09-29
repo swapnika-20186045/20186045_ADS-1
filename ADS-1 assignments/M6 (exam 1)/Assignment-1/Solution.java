@@ -8,9 +8,13 @@ import java.util.Scanner;
  */
 class AddLargeNumbers {
     /**
+    *@variable TEN
+    **/
+    private static final int TEN = 10;
+    /**
      * Constructs the object.
      */
-    AddLargeNumbers() {
+    private AddLargeNumbers() {
         //not used.
     }
     /**
@@ -74,14 +78,14 @@ class AddLargeNumbers {
         }
         while (!s1.isEmpty() || !s2.isEmpty()) {
             num = s1.pop() + s2.pop() + carry;
-            carry = num / 10;
+            carry = num / TEN;
             if (s1.size == 0) {
-                sum += (num % 10);
-                if (num / 10 != 0) {
-                    sum += (num / 10);
+                sum += (num % TEN);
+                if (num / TEN != 0) {
+                    sum += (num / TEN);
                 }
             } else {
-                sum += (num % 10);
+                sum += (num % TEN);
             }
         }
         String res = "";
@@ -131,5 +135,6 @@ public final class Solution {
             break;
         }
     }
-
 }
+
+
