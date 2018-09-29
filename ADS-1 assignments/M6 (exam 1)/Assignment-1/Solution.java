@@ -8,6 +8,12 @@ import java.util.Scanner;
  */
 class AddLargeNumbers {
     /**
+     * Constructs the object.
+     */
+    AddLargeNumbers() {
+        //not used.
+    }
+    /**
      * to convert numbers to digits.
      *
      * @param      number  The number
