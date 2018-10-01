@@ -73,18 +73,23 @@ class Steque {
      * @param      data  The data
      */
     public void push(final int data) {
+        // Node old = head;
+        // head = new Node(data, old);
+        // if(old == null) {
+        //     tail = head;
+        // }
         Node newnode = new Node();
-        if (head == null) {
-            newnode.data = data;
-            newnode.next = null;
-            head = newnode;
-            tail = newnode;
-        } else {
+        // if (head == null) {
+        //     newnode.data = data;
+        //     newnode.next = null;
+        //     head = newnode;
+        //     tail = newnode;
+        // } else {
             Node oldHead = head;
             newnode.data = data;
             newnode.next = oldHead;
             head = newnode;
-        }
+        // }
         size++;
     }
 
