@@ -99,6 +99,13 @@ class Steque {
      * @return     { description_of_the_return_value }
      */
     public int pop() {
+        // if (head.next == null && tail.next == null) {
+        //     head = tail = null;
+        //     size--;
+        // } else if (head != null) {
+        //     head = head.next;
+        //     size--;
+        // }
         if (head != null) {
             int value = head.data;
             head = head.next;
@@ -171,7 +178,7 @@ public final class Solution {
                 switch (tokens[0]) {
                 case "push":
                     sq.push(Integer.parseInt(tokens[1]));
-                    System.out.println(sq.display());
+                    System.out.println(sq);
                     break;
 
                 case "pop":
@@ -179,13 +186,13 @@ public final class Solution {
                     if (sq.isEmpty()) {
                         System.out.println("Steque is empty.");
                     } else {
-                        System.out.println(sq.display());
+                        System.out.println(sq);
                     }
                     break;
 
                 case "enqueue":
                     sq.enqueue(Integer.parseInt(tokens[1]));
-                    System.out.println(sq.display());
+                    System.out.println(sq);
                     break;
 
                 default:
