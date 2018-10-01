@@ -196,13 +196,11 @@ public final class Solution {
                     break;
 
                 default:
-                    break;
-                }
-
-                if (tokens[0].equals("")) {
+                    sq = new Steque();
                     System.out.println();
                     break;
                 }
+
             }
         }
     }
