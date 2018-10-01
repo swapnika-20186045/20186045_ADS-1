@@ -39,6 +39,7 @@ class Steque {
 
     /**
      * Constructs the object.
+     * Order of time complexity for Steque() is 1.
      */
     Steque() {
         head = null;
@@ -47,7 +48,7 @@ class Steque {
 
     /**
      * enqueue method.
-     *
+     * Order of time complexity for enqueue() is constant.
      * @param      data  The data
      */
     public void enqueue(final int data) {
@@ -69,7 +70,7 @@ class Steque {
 
     /**
      * pushs the element.
-     *
+     * Order of time complexity for push() is constant.
      * @param      data  The data
      */
     public void push(final int data) {
@@ -95,7 +96,7 @@ class Steque {
 
     /**
      * pops the element.
-     *
+     * Order of time complexity for pop() is constant.
      * @return     { description_of_the_return_value }
      */
     public int pop() {
@@ -134,11 +135,13 @@ class Steque {
     }
 
     /**
-     * displays the data.
+     * Returns a string representation of the object.
+     * Order of time complexity for toString() is n.
+     * n is size of the list.
      *
-     * @return     { description_of_the_return_value }
+     * @return     String representation of the object.
      */
-    public String display() {
+    public String toString() {
         if (size != 0) {
             String str = "";
             Node temp = head;
@@ -163,7 +166,7 @@ public final class Solution {
         //empty constructor.
     }
     /**
-     * main function.
+     * Client program.
      *
      * @param      args  The arguments
      */
@@ -178,7 +181,7 @@ public final class Solution {
                 switch (tokens[0]) {
                 case "push":
                     sq.push(Integer.parseInt(tokens[1]));
-                    System.out.println(sq.display());
+                    System.out.println(sq.toString());
                     break;
 
                 case "pop":
@@ -186,13 +189,13 @@ public final class Solution {
                     if (sq.isEmpty()) {
                         System.out.println("Steque is empty.");
                     } else {
-                        System.out.println(sq.display());
+                        System.out.println(sq.toString());
                     }
                     break;
 
                 case "enqueue":
                     sq.enqueue(Integer.parseInt(tokens[1]));
-                    System.out.println(sq.display());
+                    System.out.println(sq.toString());
                     break;
 
                 default:
