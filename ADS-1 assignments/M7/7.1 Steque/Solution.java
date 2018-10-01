@@ -79,17 +79,17 @@ class Steque {
         //     tail = head;
         // }
         Node newnode = new Node();
-        // if (head == null) {
-        //     newnode.data = data;
-        //     newnode.next = null;
-        //     head = newnode;
-        //     tail = newnode;
-        // } else {
+        if (head == null) {
+            newnode.data = data;
+            newnode.next = null;
+            head = newnode;
+            tail = newnode;
+        } else {
             Node oldHead = head;
             newnode.data = data;
             newnode.next = oldHead;
             head = newnode;
-        // }
+        }
         size++;
     }
 
