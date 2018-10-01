@@ -6,7 +6,7 @@ import java.util.Scanner;
 class Steque {
 	public Node head;
 	public Node tail;
-	int size;  
+	int size;
     private class Node {
         private int data;
         private Node next;
@@ -17,16 +17,20 @@ class Steque {
         tail = null;
     }
     public void enqueue(final int data) {
-    	Node temp = new Node();
-		if (size == 0) {
-			head = temp;
-			tail = temp;
-			size++;
-			return;
-		}
-		tail.next = temp;
-		tail = temp;
-		size++;
+	    Node temp = new Node();
+    	if (tail == null || head == null) {
+           temp.data = data;
+           temp.next = null;
+           head = temp;
+           tail = temp;
+        } else {
+           Node oldtail = tail;
+    	   temp.data = data;
+    	   temp.next = null;
+           oldtail.next = temp;
+           tail = temp;
+        }
+        size++;
     }
     public void push(final int data) {
     	Node newnode = new Node();
