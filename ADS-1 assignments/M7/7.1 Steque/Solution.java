@@ -34,7 +34,7 @@ class Steque {
         /**
          * initializing size.
          */
-        int size = 0;
+        private int size = 0;
     }
 
     /**
@@ -143,13 +143,18 @@ class Steque {
 /**
  * Class for solution.
  */
-class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
         //empty constructor.
     }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
