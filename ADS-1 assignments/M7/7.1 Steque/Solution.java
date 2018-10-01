@@ -34,15 +34,27 @@ class Steque {
     }
     public void push(final int data) {
     	Node newnode = new Node();
-        newnode.next = head;
-        head = newnode;
+        if (head == null) {
+            newnode.data = data;
+            newnode.next = null;
+            head = newnode;
+            tail = newnode;
+        } else {
+            Node oldHead = head;
+            newnode.data = data;
+            newnode.next = oldHead;
+            head = newnode;
+        }
         size++;
     }
     public int pop() {
-    	int item = head.data;
-        head = head.next;
-        size--;
-        return item;
+        if (head != null) {
+            int value = head.data;
+            head = head.next;
+            size--;
+            return value;
+        }
+        return 0;
     }
     public int size() {
         return size;
