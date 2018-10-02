@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Class for tournament.
  */
-class Tournament implements Comparable {
+class Tournament implements Comparable<Tournament> {
     /**
      * declaration of teamname.
      */
@@ -77,8 +77,8 @@ class Tournament implements Comparable {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(final Object object) {
-        Tournament that = (Tournament) object;
+    public int compareTo(Tournament that) {
+        // Tournament that = (Tournament) object;
         if (this.getWins() > that.getWins()) {
             return 1;
         } else if (this.getWins() < that.getWins()) {
