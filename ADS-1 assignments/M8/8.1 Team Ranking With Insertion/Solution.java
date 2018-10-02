@@ -3,7 +3,6 @@
  * @author Swapnika Vakacharla.
  */
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for tournament.
  */
@@ -32,7 +31,7 @@ class Tournament implements Comparable {
      * @param      lossess  The losses
      * @param      drawss   The draws
      */
-    public Tournament(final String teamnamee, final int winss,
+    Tournament(final String teamnamee, final int winss,
                       final int lossess, final int drawss) {
         this.teamname = teamnamee;
         this.wins = winss;
@@ -103,6 +102,10 @@ class Tournament implements Comparable {
  */
 class Insertion {
     /**
+    *@variable TEN
+    **/
+    private static final int TEN = 10;
+    /**
      * declaration of array of tournaments.
      */
     private Tournament[] tournaments;
@@ -114,7 +117,7 @@ class Insertion {
      * Constructs the object.
      */
     public Insertion() {
-        tournaments = new Tournament[10];
+        tournaments = new Tournament[TEN];
         size = 0;
     }
     /**
@@ -169,7 +172,7 @@ class Insertion {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -188,7 +191,7 @@ public class Solution {
             String[] s = scan.nextLine().split(",");
             list.addTournament(new Tournament(s[0],
                 Integer.parseInt(s[1]), Integer.parseInt(s[2]),
-                Integer.parseInt(s[3])));
+                Integer.parseInt(s[2 + 1])));
         }
         list.sort();
         System.out.println(list);
