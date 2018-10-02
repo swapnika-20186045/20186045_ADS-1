@@ -73,6 +73,8 @@ class Tournament implements Comparable<Tournament> {
     /**
      * compares the wins, losses and draws.
      *
+     *order of time complexity is constant.
+     *
      * @param      object  The object
      *
      * @return     { description_of_the_return_value }
@@ -130,6 +132,7 @@ class Insertion {
     }
     /**
      * sort the teams.
+     * order of time complexity is N^2.
      */
     public void sort() {
         for (int i = 0; i < size; i++) {
@@ -157,6 +160,7 @@ class Insertion {
     /**
      * Returns a string representation of the object.
      *
+     *order of time complexity is N.
      * @return     String representation of the object.
      */
     public String toString() {
