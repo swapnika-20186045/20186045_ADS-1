@@ -79,7 +79,7 @@ class Tournament implements Comparable<Tournament> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(Tournament that) {
+    public int compareTo(final Tournament that) {
         // Tournament that = (Tournament) object;
         if (this.getWins() > that.getWins()) {
             return 1;
