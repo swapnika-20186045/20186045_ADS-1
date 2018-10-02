@@ -116,7 +116,7 @@ class Insertion {
     /**
      * Constructs the object.
      */
-    public Insertion() {
+    Insertion() {
         tournaments = new Tournament[TEN];
         size = 0;
     }
