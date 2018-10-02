@@ -75,7 +75,7 @@ class Tournament implements Comparable<Tournament> {
      *
      *order of time complexity is constant.
      *
-     * @param      object  The object
+     * @param      that  The that
      *
      * @return     { description_of_the_return_value }
      */
