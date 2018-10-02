@@ -137,7 +137,7 @@ class Selection {
     public void sort() {
         for (int i = 0; i < size; i++) {
             int min = i;
-            for (int j = i + 1; j > size; j++) {
+            for (int j = i + 1; j < size; j++) {
                 if (tournaments[j].compareTo(tournaments[min]) == 1) {
                     min = j;
                 }
