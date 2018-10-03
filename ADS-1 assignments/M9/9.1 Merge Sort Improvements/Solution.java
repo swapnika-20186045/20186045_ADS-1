@@ -189,6 +189,7 @@ public final class Solution {
             String[] tokens = scan.nextLine().split(",");
             m.sort(tokens);
             System.out.println(m.show(tokens));
+            System.out.println();
         }
     }
 }
