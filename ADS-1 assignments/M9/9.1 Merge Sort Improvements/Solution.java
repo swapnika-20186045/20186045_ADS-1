@@ -19,6 +19,7 @@ class Merge {
     }
     /**
      * To merge two arrays.
+     * Order of time complexity is N.
      *
      * @param      array  The array
      * @param      aux    The auxiliary
@@ -47,6 +48,7 @@ class Merge {
     }
     /**
      * Sort.
+     * Order of time complexity is logN.
      *
      * @param      array  The array
      * @param      aux    The auxiliary array
@@ -86,6 +88,7 @@ class Merge {
     /**
      * insertion sort.
      * sort from a[low] to a[high].
+     * Order of time complexity is N^2.
      * @param      a     {Comparable array}.
      * @param      low    The lowwer value
      * @param      high    The higher value
