@@ -99,7 +99,33 @@ class Studentinfo implements Comparable<Studentinfo> {
         }
         return 0;
     }
-
+}
+class Insertion {
+    private Studentinfo[] students;
+    private int size;
+    Insertion() {
+        students = new Studentinfo[100];
+        size = 0;
+    }
+    public boolean less(final Studentinfo a, final Studentinfo b) {
+        return a.compareTo(b) < 0;
+    }
+    public void sort(final Studentinfo[] students) {
+        for (int i = 1; i < size; i++) {
+            for (int j = i; j > 0; j--) {
+                if (less(students[j - 1], students[j])) {
+                    exchange(students, j, j - 1);
+                } else {
+                    break;
+                }
+            }
+        }
+    }
+    public void exchange(final Studentinfo[] arr, final int i, final int j) {
+        Studentinfo temp = students[i];
+        students[i] = students[j];
+        students[j] = temp;
+    }
 }
 /**
  * Class for solution.
@@ -113,15 +139,22 @@ public final class Solution {
     }
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
+        int n = Integer.parseInt(scan.nextLine());
+        Studentinfo[] students = new Studentinfo[n];
         int qualifiedstudents = Integer.parseInt(scan.nextLine());
         int vacancies = Integer.parseInt(scan.nextLine());
         int unreserved = Integer.parseInt(scan.nextLine());
         int bc = Integer.parseInt(scan.nextLine());
         int sc = Integer.parseInt(scan.nextLine());
         int st = Integer.parseInt(scan.nextLine());
-        while (scan.hasNext()) {
+        // while (scan.hasNext()) {
+        for (int i = 0; i < n; i++) {
             String[] tokens = scan.nextLine().split(",");
             // System.out.println(Arrays.toString(tokens));
+            Studentinfo sd = new Studentinfo(tokens[0], tokens[1],
+                    Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]),
+                    Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]);
+            students[i] = sd;
         }
     }
 }
