@@ -44,7 +44,8 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:173: Line is longer than 80 characters (found 122). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:176: Line is longer than 80 characters (found 122). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:179: Line is longer than 80 characters (found 122). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:186:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:188: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:181:24: Must have at least one statement. [EmptyBlock]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:187:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:189: Line is longer than 80 characters (found 114). [LineLength]
 Audit done.
-Checkstyle ends with 47 errors.
+Checkstyle ends with 48 errors.

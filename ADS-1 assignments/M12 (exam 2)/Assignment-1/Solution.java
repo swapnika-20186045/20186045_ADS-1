@@ -178,6 +178,7 @@ public final class Solution {
                 } else if (arr[i].getReservation().equals("ST") && st > 0) {
                     System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
                     st--;
+                } else {
                 }
             }
         }
