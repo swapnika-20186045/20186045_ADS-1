@@ -163,25 +163,25 @@ public final class Solution {
         System.out.println();
         Fillmerit(students, vacancies, unreserved, bc, sc, st);
     }
-    public static void Fillmerit(Studentinfo[] arr, int vacancies, int unreserved, int bc, int sc, int st) {
-        for (int i = 0; i < arr.length && vacancies > 0; i++) {
-            if (unreserved > 0) {
+    public static void Fillmerit(Studentinfo[] arr, int vac, int unres, int bcs, int scs, int sts) {
+        for (int i = 0; i < arr.length && vac > 0; i++) {
+            if (unres > 0) {
                 System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                unreserved--;
+                unres--;
             } else if (arr[i].getReservation().equals("BC") || arr[i].getReservation().equals("SC") || arr[i].getReservation().equals("ST")) {
-                if (arr[i].getReservation().equals("BC") && bc > 0) {
+                if (arr[i].getReservation().equals("BC") && bcs > 0) {
                     System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                    bc--;
-                } else if (arr[i].getReservation().equals("SC") && sc > 0) {
+                    bcs--;
+                } else if (arr[i].getReservation().equals("SC") && scs > 0) {
                     System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                    sc--;
-                } else if (arr[i].getReservation().equals("ST") && st > 0) {
+                    scs--;
+                } else if (arr[i].getReservation().equals("ST") && sts > 0) {
                     System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                    st--;
+                    sts--;
                 }
             }
         }
-        vacancies--;
+        vac--;
     }
     public static void print(final Studentinfo[] arr) {
         for (int i = 0; i < arr.length; i++) {
