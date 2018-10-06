@@ -1,0 +1,21 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:11:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:12:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:13:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:14:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:15:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:16:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:17:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:19:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:31:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:34:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:37:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:40:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:46:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:49:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:52:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:71:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 18 errors.
