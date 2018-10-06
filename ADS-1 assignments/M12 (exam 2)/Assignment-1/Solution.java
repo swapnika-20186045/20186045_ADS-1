@@ -27,13 +27,17 @@ class Studentinfo implements Comparable<Studentinfo> {
         this.total = totals;
         this.reservation = reservationn;
     }
+    public String[] sepdob() {
+        String[] sepdob = dob.split("-");
+        return sepdob;
+    }
 
     public String getStudentName() {
         return studentname;
     }
-    public String getDob() {
-        return dob;
-    }
+    // public String getDob() {
+    //     return dob;
+    // }
     public int getSub1() {
         return sub1;
     }
@@ -49,25 +53,47 @@ class Studentinfo implements Comparable<Studentinfo> {
     public String getReservation() {
         return reservation;
     }
+
     public int compareTo(final Studentinfo that) {
         if (this.getTotal() > that.getTotal()) {
             return 1;
-        } else if (this.getTotal() == that.getTotal()) {
-            if (this.getSub3() > that.getSub3()) {
-                return 1;
-            } else if (this.getSub3() == that.getSub3()) {
-                if (this.getSub2() > that.getSub2()) {
-                    return 1;
-                }
-                // else if (this.getSub2() == that.getSub2()) {
-                //     if (this.getDob() > that.getDob()) {
-                //         return 1;
-                //     }
-                // }
-            }
+        }
+        if (this.getTotal() < that.getTotal()) {
+            return -1;
+        }
+        if (this.getSub3() > that.getSub3()) {
+            return 1;
+        }
+        if (this.getSub3() < that.getSub3()) {
+            return -1;
+        }
+        if (this.getSub2() > that.getSub2()) {
+            return 1;
+        }
+        if (this.getSub2() < that.getSub2()) {
+            return -1;
+        }
+        if (Integer.parseInt(this.sepdob()[2]) > Integer.parseInt(that.sepdob()[2])) {
+            return 1;
+        }
+        if (Integer.parseInt(this.sepdob()[2]) < Integer.parseInt(that.sepdob()[2])) {
+            return -1;
+        }
+        if (Integer.parseInt(this.sepdob()[1]) > Integer.parseInt(that.sepdob()[1])) {
+            return 1;
+        }
+        if (Integer.parseInt(this.sepdob()[1]) < Integer.parseInt(that.sepdob()[1])) {
+            return -1;
+        }
+        if (Integer.parseInt(this.sepdob()[0]) > Integer.parseInt(that.sepdob()[0])) {
+            return 1;
+        }
+        if (Integer.parseInt(this.sepdob()[0]) < Integer.parseInt(that.sepdob()[0])) {
+            return -1;
         }
         return 0;
     }
+
 }
 /**
  * Class for solution.
@@ -89,7 +115,7 @@ public final class Solution {
         int st = Integer.parseInt(scan.nextLine());
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(",");
-            System.out.println(Arrays.toString(tokens));
+            // System.out.println(Arrays.toString(tokens));
         }
     }
 }
