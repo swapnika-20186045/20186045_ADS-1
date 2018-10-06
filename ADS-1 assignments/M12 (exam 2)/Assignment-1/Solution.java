@@ -52,8 +52,19 @@ class Studentinfo implements Comparable<Studentinfo> {
     public int compareTo(final Studentinfo that) {
         if (this.getTotal() > that.getTotal()) {
             return 1;
-        } else if (this.getTotal() < that.getTotal()) {
-            return -1;
+        } else if (this.getTotal() == that.getTotal()) {
+            if (this.getSub3() > that.getSub3()) {
+                return 1;
+            } else if (this.getSub3() == that.getSub3()) {
+                if (this.getSub2() > that.getSub2()) {
+                    return 1;
+                }
+                // else if (this.getSub2() == that.getSub2()) {
+                //     if (this.getDob() > that.getDob()) {
+                //         return 1;
+                //     }
+                // }
+            }
         }
         return 0;
     }
