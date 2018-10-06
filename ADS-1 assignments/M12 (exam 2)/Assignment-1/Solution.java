@@ -103,14 +103,14 @@ class Studentinfo implements Comparable<Studentinfo> {
 class Insertion {
     private Studentinfo[] students;
     private int size;
-    Insertion() {
-        students = new Studentinfo[100];
+    Insertion(Studentinfo[] studentsmain) {
+        this.students = studentsmain;
         size = 0;
     }
     public boolean less(final Studentinfo a, final Studentinfo b) {
         return a.compareTo(b) == -1;
     }
-    public void sort(final Studentinfo[] students) {
+    public void sort() {
         for (int i = 1; i < size; i++) {
             for (int j = i; j > 0; j--) {
                 if (less(students[j - 1], students[j])) {
@@ -162,8 +162,8 @@ public final class Solution {
                     Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]);
             students[i] = sd;
         }
-        Insertion ins = new Insertion();
-        ins.sort(students);
+        Insertion ins = new Insertion(students);
+        ins.sort();
         // System.out.println(students);
         // print(students);
         System.out.println();

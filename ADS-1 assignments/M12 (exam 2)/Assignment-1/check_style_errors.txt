@@ -19,10 +19,9 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:104:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:105:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:106:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:107:36: '100' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:106:15: Parameter studentsmain should be final. [FinalParameters]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:110:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:113:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:113:42: 'students' hides a field. [HiddenField]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:125:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:127: Line is longer than 80 characters (found 114). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:130:5: Missing a Javadoc comment. [JavadocMethod]
@@ -42,4 +41,4 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:198:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:200: Line is longer than 80 characters (found 114). [LineLength]
 Audit done.
-Checkstyle ends with 42 errors.
+Checkstyle ends with 41 errors.
