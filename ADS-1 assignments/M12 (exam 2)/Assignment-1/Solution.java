@@ -156,5 +156,6 @@ public final class Solution {
                     Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]);
             students[i] = sd;
         }
+        Insertion ins = new Insertion();
     }
 }
