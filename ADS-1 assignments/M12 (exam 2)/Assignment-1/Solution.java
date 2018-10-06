@@ -114,7 +114,7 @@ class Insertion {
         for (int i = 1; i < size; i++) {
             for (int j = i; j > 0; j--) {
                 if (less(students[j - 1], students[j])) {
-                    exchange(students, j, j - 1);
+                    exchange(students, j - 1, j);
                 } else {
                     break;
                 }
