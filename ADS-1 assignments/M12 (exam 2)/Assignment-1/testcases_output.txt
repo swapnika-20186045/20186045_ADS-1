@@ -31,6 +31,7 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
+[LStudentinfo;@5594a1b5
 Ajay,76,Open
 priya,72,SC
 rahul,73,Open
@@ -104,6 +105,7 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
+[LStudentinfo;@5594a1b5
 Ajay,76,Open
 priya,72,SC
 rahul,73,Open
@@ -161,6 +163,7 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
+[LStudentinfo;@5594a1b5
 Ajay,76,Open
 priya,76,SC
 rahul,73,Open
@@ -196,6 +199,7 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
+[LStudentinfo;@5594a1b5
 Ajay,76,Open
 priya,76,SC
 rahul,73,Open
@@ -260,6 +264,7 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
+[LStudentinfo;@5594a1b5
 Ajay,76,Open
 priya,76,Open
 rahul,73,Open
@@ -348,6 +353,7 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
+[LStudentinfo;@5594a1b5
 Ajay,76,Open
 priya,72,SC
 rahul,73,Open
