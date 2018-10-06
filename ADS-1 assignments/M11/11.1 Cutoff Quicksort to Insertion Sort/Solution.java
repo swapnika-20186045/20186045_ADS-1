@@ -20,7 +20,8 @@ class QuickSort {
      * @param      lo    The lower
      * @param      hi    The higher
      */
-    public void insertionSort(final Comparable[] a, final int lo, final int hi) {
+    public void insertionSort(final Comparable[] a,
+                              final int lo, final int hi) {
         for (int i = 0; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
                 exchange(a, j, j - 1);
@@ -64,7 +65,7 @@ class QuickSort {
      * @param      cutoff   The cutoff
      */
     public void sort(final Comparable[] a, final int lo,
-        final int hi, final int cutoff) {
+                     final int hi, final int cutoff) {
         if (hi <= lo + cutoff - 1) {
             insertionSort(a, lo, hi);
             System.out.println("insertionSort called");
