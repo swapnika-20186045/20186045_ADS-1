@@ -22,7 +22,6 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:107:36: '100' is a magic number. [MagicNumber]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:110:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:113:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:113:42: 'students' hides a field. [HiddenField]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:124:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:140:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:155:74: '3' is a magic number. [MagicNumber]
@@ -48,4 +47,4 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:187:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:189: Line is longer than 80 characters (found 114). [LineLength]
 Audit done.
-Checkstyle ends with 48 errors.
+Checkstyle ends with 47 errors.

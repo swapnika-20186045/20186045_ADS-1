@@ -110,7 +110,7 @@ class Insertion {
     public boolean less(final Studentinfo a, final Studentinfo b) {
         return a.compareTo(b) == -1;
     }
-    public void sort(final Studentinfo[] students) {
+    public void sort(final Studentinfo[] arr) {
         for (int i = 1; i < size; i++) {
             for (int j = i; j > 0; j--) {
                 if (less(students[j - 1], students[j])) {
