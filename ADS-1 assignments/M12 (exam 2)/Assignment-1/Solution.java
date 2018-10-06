@@ -163,7 +163,13 @@ public final class Solution {
         System.out.println();
         Fillmerit(students, vacancies, unreserved, bc, sc, st);
     }
-    public static void Fillmerit(Studentinfo[] arr, int vac, int unres, int bc, int sc, int st) {
+ 
+    public static void Fillmerit(Studentinfo[] arr, int vacancies, int unreserved, int bcs, int scs, int sts) {
+        int vac = vacancies;
+        int unres = unreserved;
+        int bc = bcs;
+        int sc = scs;
+        int st = sts;
         for (int i = 0; i < arr.length && vac > 0; i++) {
             if (unres > 0) {
                 System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
@@ -178,7 +184,6 @@ public final class Solution {
                 } else if (arr[i].getReservation().equals("ST") && st > 0) {
                     System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
                     st--;
-                } else {
                 }
             }
         }
