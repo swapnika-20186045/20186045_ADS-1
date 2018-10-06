@@ -1,6 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:6:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:11:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:12:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:13:5: Missing a Javadoc comment. [JavadocVariable]
@@ -17,12 +16,6 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:50:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:53:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:57:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:76: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:79: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:82: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:85: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:88: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:91: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:108:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M12 (exam 2)\Assignment-1\Solution.java:114:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 18 errors.

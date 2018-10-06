@@ -3,7 +3,7 @@
  * @author Swapnika Vakacharla.
  */
 import java.util.Scanner;
-import java.util.Arrays;
+// import java.util.Arrays;
 /**
  * Class for reservation.
  */
@@ -17,8 +17,8 @@ class Studentinfo implements Comparable<Studentinfo> {
     private String reservation;
 
     Studentinfo(final String studentnamee, final String dobb,
-        final int sub1s, final int sub2s, final int sub3s,
-        final int totals, final String reservationn) {
+                final int sub1s, final int sub2s, final int sub3s,
+                final int totals, final String reservationn) {
         this.studentname = studentnamee;
         this.dob = dobb;
         this.sub1 = sub1s;
@@ -73,22 +73,28 @@ class Studentinfo implements Comparable<Studentinfo> {
         if (this.getSub2() < that.getSub2()) {
             return -1;
         }
-        if (Integer.parseInt(this.sepdob()[2]) > Integer.parseInt(that.sepdob()[2])) {
+        if (Integer.parseInt(this.sepdob()[2]) > Integer.parseInt(
+                    that.sepdob()[2])) {
             return 1;
         }
-        if (Integer.parseInt(this.sepdob()[2]) < Integer.parseInt(that.sepdob()[2])) {
+        if (Integer.parseInt(this.sepdob()[2]) < Integer.parseInt(
+                    that.sepdob()[2])) {
             return -1;
         }
-        if (Integer.parseInt(this.sepdob()[1]) > Integer.parseInt(that.sepdob()[1])) {
+        if (Integer.parseInt(this.sepdob()[1]) > Integer.parseInt(
+                    that.sepdob()[1])) {
             return 1;
         }
-        if (Integer.parseInt(this.sepdob()[1]) < Integer.parseInt(that.sepdob()[1])) {
+        if (Integer.parseInt(this.sepdob()[1]) < Integer.parseInt(
+                    that.sepdob()[1])) {
             return -1;
         }
-        if (Integer.parseInt(this.sepdob()[0]) > Integer.parseInt(that.sepdob()[0])) {
+        if (Integer.parseInt(this.sepdob()[0]) > Integer.parseInt(
+                    that.sepdob()[0])) {
             return 1;
         }
-        if (Integer.parseInt(this.sepdob()[0]) < Integer.parseInt(that.sepdob()[0])) {
+        if (Integer.parseInt(this.sepdob()[0]) < Integer.parseInt(
+                    that.sepdob()[0])) {
             return -1;
         }
         return 0;
