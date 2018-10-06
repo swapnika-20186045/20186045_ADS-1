@@ -159,36 +159,36 @@ public final class Solution {
         Insertion ins = new Insertion();
         ins.sort(students);
         // System.out.println(students);
-        // print(students);
+        print(students);
         System.out.println();
-        Fillmerit(students, vacancies, unreserved, bc, sc, st);
+        // Fillmerit(students, vacancies, unreserved, bc, sc, st);
     }
  
-    public static void Fillmerit(Studentinfo[] arr, int vacances, int unreservd, int bcs, int scs, int sts) {
-        int vacants = vacances;
-        int unresd = unreservd;
-        int bc = bcs;
-        int sc = scs;
-        int st = sts;
-        for (int i = 0; i < arr.length && vacants > 0; i++) {
-            if (unresd > 0) {
-                System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                unresd--;
-            } else if (arr[i].getReservation().equals("BC") || arr[i].getReservation().equals("SC") || arr[i].getReservation().equals("ST")) {
-                if (arr[i].getReservation().equals("BC") && bc > 0) {
-                    System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                    bc--;
-                } else if (arr[i].getReservation().equals("SC") && sc > 0) {
-                    System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                    sc--;
-                } else if (arr[i].getReservation().equals("ST") && st > 0) {
-                    System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                    st--;
-                }
-            }
-        }
-        vacants--;
-    }
+    // public static void Fillmerit(Studentinfo[] arr, int vacances, int unreservd, int bcs, int scs, int sts) {
+    //     int vacants = vacances;
+    //     int unresd = unreservd;
+    //     int bc = bcs;
+    //     int sc = scs;
+    //     int st = sts;
+    //     for (int i = 0; i < arr.length && vacants > 0; i++) {
+    //         if (unresd > 0) {
+    //             System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
+    //             unresd--;
+    //         } else if (arr[i].getReservation().equals("BC") || arr[i].getReservation().equals("SC") || arr[i].getReservation().equals("ST")) {
+    //             if (arr[i].getReservation().equals("BC") && bc > 0) {
+    //                 System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
+    //                 bc--;
+    //             } else if (arr[i].getReservation().equals("SC") && sc > 0) {
+    //                 System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
+    //                 sc--;
+    //             } else if (arr[i].getReservation().equals("ST") && st > 0) {
+    //                 System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
+    //                 st--;
+    //             }
+    //         }
+    //     }
+    //     vacants--;
+    // }
     public static void print(final Studentinfo[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
