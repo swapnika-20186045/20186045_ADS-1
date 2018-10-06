@@ -105,7 +105,7 @@ class Insertion {
     private int size;
     Insertion(Studentinfo[] studentsmain) {
         this.students = studentsmain;
-        size = 0;
+        size = studentsmain.length;
     }
     public boolean less(final Studentinfo a, final Studentinfo b) {
         return a.compareTo(b) == -1;
@@ -195,9 +195,9 @@ public final class Solution {
     //     }
     //     vacants--;
     // }
-    public static void print(final Studentinfo[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-        }
-    }
+    // public static void print(final Studentinfo[] arr) {
+    //     for (int i = 0; i < arr.length; i++) {
+    //         System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
+    //     }
+    // }
 }
