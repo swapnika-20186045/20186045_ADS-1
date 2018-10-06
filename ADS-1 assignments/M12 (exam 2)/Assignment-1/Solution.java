@@ -141,7 +141,7 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         Studentinfo[] students = new Studentinfo[n];
-        int qualifiedstudents = Integer.parseInt(scan.nextLine());
+        // int qualifiedstudents = Integer.parseInt(scan.nextLine());
         int vacancies = Integer.parseInt(scan.nextLine());
         int unreserved = Integer.parseInt(scan.nextLine());
         int bc = Integer.parseInt(scan.nextLine());
