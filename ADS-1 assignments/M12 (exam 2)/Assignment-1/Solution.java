@@ -164,16 +164,16 @@ public final class Solution {
         Fillmerit(students, vacancies, unreserved, bc, sc, st);
     }
  
-    public static void Fillmerit(Studentinfo[] arr, int vacancies, int unreserved, int bcs, int scs, int sts) {
-        int vac = vacancies;
-        int unres = unreserved;
+    public static void Fillmerit(Studentinfo[] arr, int vacances, int unreservd, int bcs, int scs, int sts) {
+        int vacants = vacances;
+        int unresd = unreservd;
         int bc = bcs;
         int sc = scs;
         int st = sts;
-        for (int i = 0; i < arr.length && vac > 0; i++) {
-            if (unres > 0) {
+        for (int i = 0; i < arr.length && vacants > 0; i++) {
+            if (unresd > 0) {
                 System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
-                unres--;
+                unresd--;
             } else if (arr[i].getReservation().equals("BC") || arr[i].getReservation().equals("SC") || arr[i].getReservation().equals("ST")) {
                 if (arr[i].getReservation().equals("BC") && bc > 0) {
                     System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
@@ -187,7 +187,7 @@ public final class Solution {
                 }
             }
         }
-        vac--;
+        vacants--;
     }
     public static void print(final Studentinfo[] arr) {
         for (int i = 0; i < arr.length; i++) {
