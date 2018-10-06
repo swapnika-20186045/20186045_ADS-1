@@ -159,7 +159,7 @@ public final class Solution {
         Insertion ins = new Insertion();
         ins.sort(students);
         // System.out.println(students);
-        print(students);
+        // print(students);
         System.out.println();
         Fillmerit(students, vacancies, unreserved, bc, sc, st);
     }
