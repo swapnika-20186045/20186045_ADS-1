@@ -110,7 +110,7 @@ class Insertion {
     public boolean less(final Studentinfo a, final Studentinfo b) {
         return a.compareTo(b) == -1;
     }
-    public void sort(final Studentinfo[] arr) {
+    public void sort(final Studentinfo[] students) {
         for (int i = 1; i < size; i++) {
             for (int j = i; j > 0; j--) {
                 if (less(students[j - 1], students[j])) {
@@ -119,6 +119,12 @@ class Insertion {
                     break;
                 }
             }
+        }
+        // print(arr);
+    }
+    public static void print(final Studentinfo[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i].getStudentName() + "," + arr[i].getTotal() + "," + arr[i].getReservation());
         }
     }
     public void exchange(final Studentinfo[] arr, final int i, final int j) {
