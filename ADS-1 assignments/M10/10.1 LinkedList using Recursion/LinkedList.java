@@ -53,7 +53,7 @@ class LinkedList {
      *
      * @throws     Exception  { exception_description }
      */
-    public void insertAt(int position, String data) throws Exception{
+    public void insertAt(int position, String data) throws Exception {
         Node newNode = new Node(data);
         if (position < 0 || position > size) {
             throw new Exception("Can't insert at this position.");
