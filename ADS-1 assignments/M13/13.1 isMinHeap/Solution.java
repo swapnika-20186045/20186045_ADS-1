@@ -53,7 +53,7 @@ class MinHeap<E extends Comparable<E>> {
 /**
  * class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
