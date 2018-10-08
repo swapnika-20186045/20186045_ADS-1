@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M13\13.1 isMinHeap\Solution.java:56: Class Solution should be declared as final. [FinalClass]
+Audit done.
+Checkstyle ends with 2 errors.
