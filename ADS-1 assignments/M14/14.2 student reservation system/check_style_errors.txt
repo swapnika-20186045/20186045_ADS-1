@@ -1,0 +1,6 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:269:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:270:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.2 student reservation system\Solution.java:271:5: Missing a Javadoc comment. [JavadocVariable]
+Audit done.
+Checkstyle ends with 3 errors.
