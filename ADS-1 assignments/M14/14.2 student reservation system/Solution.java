@@ -266,8 +266,17 @@ class Heapsort {
  * Class for solution.
  */
 public final class Solution {
+    /**
+     * variable declaration.
+     */
     private static final int FOUR = 4;
+    /**
+     * variable declaration.
+     */
     private static final int FIVE = 5;
+    /**
+     * variable declaration.
+     */
     private static final int SIX = 6;
     /**
      * Constructs the object.
