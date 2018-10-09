@@ -99,11 +99,11 @@ class Heapsort {
 /**
  * Class for solution.
  */
-final class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         //empty constructor.
     }
     /**
