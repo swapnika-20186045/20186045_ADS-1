@@ -1,21 +1,13 @@
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:6:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:11:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:24:18: Parameter n should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:45:28: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:55:30: Parameter i should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:55:37: Parameter j should be final. [FinalParameters]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:64:12: Unused @param tag for 'i'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:66:29: Parameter n should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:66:36: Parameter k should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:66:40: Expected @param tag for 'k'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:88:28: Parameter index should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:66:52: Expected @param tag for 'k'. [JavadocMethod]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:103:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:115:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:123: Line is longer than 80 characters (found 121). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:123:56: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:123:94: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:126: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M14\14.1 Dynamic Median Finding\Solution.java:126:55: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 10 errors.

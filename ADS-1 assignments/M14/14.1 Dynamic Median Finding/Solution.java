@@ -21,7 +21,7 @@ class Heapsort {
 	 *
 	 * @param      n     { parameter_description }
 	 */
-	Heapsort(int n) {
+	Heapsort(final int n) {
 		array = new int[n];
 		size = 0;
 	}
@@ -42,7 +42,7 @@ class Heapsort {
 	 *
 	 * @param      item  The item
 	 */
-	public void insert(int item) {
+	public void insert(final int item) {
 		array[size++] = item;
 		sort();
 	}
@@ -52,7 +52,7 @@ class Heapsort {
 	 * @param      i     { parameter_description }
 	 * @param      j     { parameter_description }
 	 */
-	public void exchange(int i, int j) {
+	public void exchange(final int i, final int j) {
 		int temp = array[i];
 		array[i] = array[j];
 		array[j] = temp;
@@ -63,7 +63,7 @@ class Heapsort {
 	 * @param      n     { parameter_description }
 	 * @param      i     { parameter_description }
 	 */
-	public void heapify(int n, int k) {
+	public void heapify(final int n, final int k) {
 		int largest = k;
 		int l = 2 * k + 1;
 		int r = 2 * k + 2;
@@ -85,7 +85,7 @@ class Heapsort {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int getitem(int index) {
+	public int getitem(final int index) {
 		return array[index];
 	}
 	/**
@@ -112,7 +112,7 @@ public final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
 		Heapsort heap =  new Heapsort(n);
