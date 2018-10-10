@@ -156,7 +156,7 @@ class Queue<Item> implements Iterable<Item> {
          *
          * @param      first  The first
          */
-        public ListIterator(Node<Item> first) {
+        ListIterator(final Node<Item> first) {
             current = first;
         }
         /**
@@ -214,7 +214,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * Initializes an empty symbol table.
      */
-    public BinarySearchST() {
+    BinarySearchST() {
         this(INIT_CAPACITY);
     }
     /**
@@ -222,12 +222,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * specified initial capacity.
      * @param capacity the maximum capacity
      */
-    public BinarySearchST(final int capacity) {
+    BinarySearchST(final int capacity) {
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[]) new Object[capacity];
     }
     /**
     * resize the underlying arrays.
+    * @param capacity   The capacity
     **/
     private void resize(final int capacity) {
         // assert capacity >= n;
@@ -269,8 +270,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException
-            ("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         } else {
             return get(key) != null;
         }
@@ -341,8 +342,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public void put(final Key key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException
-            ("first argument to put() is null");
+            throw new IllegalArgumentException(
+             "first argument to put() is null");
         }
         if (val == null) {
             delete(key);
@@ -377,8 +378,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public void delete(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException
-            ("argument to delete() is null");
+            throw new IllegalArgumentException(
+             "argument to delete() is null");
         }
         if (isEmpty()) {
             return;
@@ -397,7 +398,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         keys[n] = null;  // to avoid loitering
         vals[n] = null;
         // resize if 1/4 full
-        if (n > 0 && n == keys.length / 4) {
+        if (n > 0 && n == keys.length / 2 + 2) {
             resize(keys.length / 2);
         }
         assert check();
@@ -440,8 +441,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
       */
     public Key min() {
         if (isEmpty()) {
-            throw new NoSuchElementException
-            ("called min() with empty symbol table");
+            throw new NoSuchElementException(
+            "called min() with empty symbol table");
         }
         return keys[0];
     }
@@ -454,8 +455,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key max() {
         if (isEmpty()) {
-            throw new NoSuchElementException
-            ("called max() with empty symbol table");
+            throw new NoSuchElementException(
+            "called max() with empty symbol table");
         }
         return keys[n - 1];
     }
@@ -470,8 +471,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException
-            ("called select() with invalid argument: " + k);
+            throw new IllegalArgumentException(
+            "called select() with invalid argument: " + k);
         }
         return keys[k];
     }
@@ -513,8 +514,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Key ceiling(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException
-            ("argument to ceiling() is null");
+            throw new IllegalArgumentException(
+            "argument to ceiling() is null");
         }
         int i = rank(key);
         if (i == n) {
@@ -536,12 +537,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public int size(final Key lo, final Key hi) {
         if (lo == null) {
-            throw new IllegalArgumentException
-            ("first argument to size() is null");
+            throw new IllegalArgumentException(
+            "first argument to size() is null");
         }
         if (hi == null) {
-            throw new IllegalArgumentException
-            ("second argument to size() is null");
+            throw new IllegalArgumentException(
+            "second argument to size() is null");
         }
         if (lo.compareTo(hi) > 0) {
             return 0;
@@ -577,19 +578,20 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Iterable<Key> keys(final Key lo, final Key hi) {
         if (lo == null) {
-            throw new IllegalArgumentException
-            ("first argument to keys() is null");
+            throw new IllegalArgumentException(
+            "first argument to keys() is null");
         }
         if (hi == null) {
-            throw new IllegalArgumentException
-            ("second argument to keys() is null");
+            throw new IllegalArgumentException(
+            "second argument to keys() is null");
         }
         Queue<Key> queue = new Queue<Key>();
         if (lo.compareTo(hi) > 0) {
             return queue;
         }
-        for (int i = rank(lo); i < rank(hi); i++)
+        for (int i = rank(lo); i < rank(hi); i++) {
             queue.enqueue(keys[i]);
+        }
         if (contains(hi)) {
             queue.enqueue(keys[rank(hi)]);
         }
@@ -625,6 +627,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     // are the items in the array in ascending order?
     /**
     * checks whether the queue is sorted.
+    * @return boolean
     **/
     private boolean isSorted() {
         for (int i = 1; i < size(); i++) {
@@ -638,6 +641,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     // check that rank(select(i)) = i
     /**
     * checks the rank.
+    * @return boolean
     **/
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++) {

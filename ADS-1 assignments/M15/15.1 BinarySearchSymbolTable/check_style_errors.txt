@@ -1,25 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:149: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:159:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:159:29: Parameter first should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:159:40: 'first' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:217:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:225:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:232:35: Expected @param tag for 'capacity'. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:273:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:345:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:381:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:400:41: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:444:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:458:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:474:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:517:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:540:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:544:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:581:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:585:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:591: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:629: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:642: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:159:39: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 2 errors.
