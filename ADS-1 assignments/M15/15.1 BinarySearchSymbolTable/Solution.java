@@ -3,7 +3,6 @@
  */
 import java.util.Scanner;
 import java.util.NoSuchElementException;
-import java.util.Iterator;
 /**
  * Class for binary search st.
  *
