@@ -145,6 +145,7 @@ class Queue<Item> implements Iterable<Item> {
     // an iterator, doesn't implement remove() since it's optional
     /**
     * Class for ListIterator<Item>.
+    * @param <Item>
     **/
     private class ListIterator<Item> implements Iterator<Item> {
         /**

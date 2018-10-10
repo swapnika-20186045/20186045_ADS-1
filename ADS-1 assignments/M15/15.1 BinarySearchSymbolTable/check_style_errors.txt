@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:149: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:159:39: 'first' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M15\15.1 BinarySearchSymbolTable\Solution.java:160:39: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
