@@ -75,10 +75,6 @@ class BinarySearchTree {
      */
     private Node root;
     /**
-     * declaration of size.
-     */
-    int size;
-    /**
      * Class for node.
      */
     private class Node {

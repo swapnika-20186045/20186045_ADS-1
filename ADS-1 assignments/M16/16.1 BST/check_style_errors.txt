@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:80:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 1 errors.
