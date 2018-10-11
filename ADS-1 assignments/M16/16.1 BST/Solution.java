@@ -2,21 +2,23 @@
  * Binary search tree.
  * @author Swapnika Vakacharla.
  */
-import java.util.NoSuchElementException;
 import java.util.Scanner;
+/**
+ * Class for book.
+ */
 class Book implements Comparable<Book> {
     /**
      * declaration of book name.
      */
-    String name;
+    private String name;
     /**
      * declaration of author name.
      */
-    String author;
+    private String author;
     /**
      * declaration of price.
      */
-    String price;
+    private String price;
     /**
      * Constructs the object.
      *
@@ -24,7 +26,7 @@ class Book implements Comparable<Book> {
      * @param      authorr  The authorr
      * @param      pricee   The pricee
      */
-    Book(String namee, String authorr, String pricee) {
+    Book(final String namee, final String authorr, final String pricee) {
         this.name = namee;
         this.author = authorr;
         this.price = pricee;
@@ -83,19 +85,19 @@ class BinarySearchTree {
         /**
          * declaration of key.
          */
-        Book key;
+        private Book key;
         /**
          * declaration of value.
          */
-        String val;
+        private String val;
         /**
          * declaration of left node.
          */
-        Node left;
+        private Node left;
         /**
          * declaration of right node.
          */
-        Node right;
+        private Node right;
         /**
          * Constructs the object.
          *
@@ -201,11 +203,11 @@ public final class Solution {
             String[] input = scan.nextLine().split(",");
             switch (input[0]) {
             case "put":
-                Book key = new Book(input[1], input[2], input[3]);
-                bst.put(key, input[4]);
+                Book key = new Book(input[1], input[2], input[2 + 1]);
+                bst.put(key, input[2 + 2]);
                 break;
             case "get":
-                key = new Book(input[1], input[2], input[3]);
+                key = new Book(input[1], input[2], input[2 + 1]);
                 System.out.println(bst.get(key));
                 break;
             default:

@@ -1,20 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:5:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:7: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:11:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:15:12: Variable 'author' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:19:12: Variable 'price' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:27:10: Parameter namee should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:27:24: Parameter authorr should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:27:40: Parameter pricee should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:78:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:86:14: Variable 'key' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:90:16: Variable 'val' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:94:14: Variable 'left' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:98:14: Variable 'right' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:204:63: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:205:36: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:208:58: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M16\16.1 BST\Solution.java:80:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 1 errors.
