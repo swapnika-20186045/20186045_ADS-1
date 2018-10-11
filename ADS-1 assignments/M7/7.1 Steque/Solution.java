@@ -70,7 +70,7 @@ class Steque {
 
     /**
      * pushs the element.
-     * Order of time complexity for push() is constant.
+     * Order of time complexity for push() is 1.
      * @param      data  The data
      */
     public void push(final int data) {
@@ -96,7 +96,7 @@ class Steque {
 
     /**
      * pops the element.
-     * Order of time complexity for pop() is constant.
+     * Order of time complexity for pop() is 1.
      * @return     { description_of_the_return_value }
      */
     public int pop() {
@@ -118,6 +118,7 @@ class Steque {
 
     /**
      * returns size.
+     * Order of time complexity is 1.
      *
      * @return     { description_of_the_return_value }
      */
@@ -127,6 +128,7 @@ class Steque {
 
     /**
      * Determines if empty.
+     * Order of time complexity is 1.
      *
      * @return     True if empty, False otherwise.
      */
@@ -136,8 +138,7 @@ class Steque {
 
     /**
      * Returns a string representation of the object.
-     * Order of time complexity for toString() is n.
-     * n is size of the list.
+     * Order of time complexity for toString() is N.
      *
      * @return     String representation of the object.
      */
