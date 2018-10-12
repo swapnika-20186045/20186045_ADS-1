@@ -1,0 +1,20 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:12:22: Variable 'sum' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:16:22: Variable 'i' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:20:22: Variable 'j' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:27:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:27:20: Parameter i should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:27:24: 'i' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:27:27: Parameter j should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:27:31: 'j' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:39:26: Parameter that should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:40: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:41: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:68:29: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:69:17: '600' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:71:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:72:13: Name 'M' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:88:15: 'if' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 17 errors.
