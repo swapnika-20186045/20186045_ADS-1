@@ -24,7 +24,7 @@ class CubeSum implements Comparable<CubeSum> {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    public CubeSum(int i, int j) {
+    CubeSum(final int i, final int j) {
         this.sum = i * i * i + j * j * j;
         this.i = i;
         this.j = j;
@@ -36,9 +36,13 @@ class CubeSum implements Comparable<CubeSum> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(CubeSum that) {
-        if (this.sum < that.sum) return -1;
-        if (this.sum > that.sum) return +1;
+    public int compareTo(final CubeSum that) {
+        if (this.sum < that.sum) {
+            return -1;
+        }
+        if (this.sum > that.sum) {
+            return +1;
+        }
         return 0;
     }
     /**
@@ -65,7 +69,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         int n = 600;
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
@@ -85,7 +89,7 @@ public final class Solution {
             } else {
                 count = 0;
             }
-            if(count == M - 1) {
+            if (count == M - 1) {
                 N--;
                 if (N == 0) {
                     System.out.println(s.sum);
