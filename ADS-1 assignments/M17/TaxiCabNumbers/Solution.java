@@ -76,8 +76,8 @@ public final class Solution {
     public static void main(final String[] args) {
         int n = SIXHUNDRED;
         Scanner scan = new Scanner(System.in);
-        int N = scan.nextInt();
-        int M = scan.nextInt();
+        int num = scan.nextInt();
+        int num1 = scan.nextInt();
         int count = 0;
         int temp = 1;
         // initialize priority queue
@@ -93,9 +93,9 @@ public final class Solution {
             } else {
                 count = 0;
             }
-            if (count == M - 1) {
-                N--;
-                if (N == 0) {
+            if (count == num1 - 1) {
+                num--;
+                if (num == 0) {
                     System.out.println(s.sum);
                     break;
                 }

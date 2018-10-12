@@ -4,7 +4,5 @@ Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:20:22: Variable 'j' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:27:23: 'i' hides a field. [HiddenField]
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:27:36: 'j' hides a field. [HiddenField]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:79:13: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M17\TaxiCabNumbers\Solution.java:80:13: Name 'M' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 5 errors.
