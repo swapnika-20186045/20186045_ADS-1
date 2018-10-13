@@ -132,16 +132,15 @@ public final class Solution {
                 if (tokens[1].equals("MaxST")) {
                     if (best.contains(tokens[2])) {
                         System.out.println(best.get(tokens[2]));
-                    // } else {
-                    //     System.out.println("0");
+                    } else {
+                        System.out.println("0");
                     }
 
                 } else {
                     if (worst.contains(tokens[2])) {
                         System.out.println(worst.get(tokens[2]));
-                    // } else {
-                    //     System.out.println("0");
-                    // }
+                    } else {
+                        System.out.println("0");
                     }
                 }
                 break;
