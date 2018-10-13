@@ -77,6 +77,14 @@ class Stock implements Comparable<Stock> {
  */
 public final class Solution {
     /**
+     * declaration of number.
+     */
+    private static int FIVE = 5;
+    /**
+     * declaration of number.
+     */
+    private static int SIX = 6;
+    /**
      * Constructs the object.
      */
     private Solution() {
@@ -90,26 +98,27 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < SIX; i++) {
             int count = 0;
             MinPQ<Stock> min = new MinPQ<>();
             MaxPQ<Stock> max = new MaxPQ<>();
             while (count < n) {
                 String[] tokens = scan.nextLine().split(",");
-                Stock stocks = new Stock(tokens[0], Double.parseDouble(tokens[1]));
+                Stock stocks = new Stock(tokens[0],
+                    Double.parseDouble(tokens[1]));
                 min.insert(stocks);
                 max.insert(stocks);
                 count++;
             }
             BinarySearchST<String, Double> best = new  BinarySearchST<>();
             BinarySearchST<String, Double> worst = new BinarySearchST<>();
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < FIVE; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
                 best.put(maxbest.getStockName(), maxbest.getChange());
             }
             System.out.println();
-            for(int k = 0; k < 5; k++) {
+            for (int k = 0; k < FIVE; k++) {
                 Stock minworst = min.delMin();
                 System.out.println(minworst);
                 worst.put(minworst.getStockName(), minworst.getChange());
