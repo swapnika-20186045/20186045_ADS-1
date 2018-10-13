@@ -10,7 +10,7 @@ public final class Solution {
 			int hrs = 6;
 			while(hrs > 0) {
 				String[] tokens = scan.nextLine().split(",");
-				System.out.println(tokens);
+				System.out.println(tokens[1]);
 				hrs--;
 			}
 			n--;
