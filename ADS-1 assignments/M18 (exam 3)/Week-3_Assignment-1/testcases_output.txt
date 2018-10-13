@@ -440,6 +440,10 @@ Honeywell Auto -1.08
 Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
+
+-2.0
+-2.0
+0.33
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -591,6 +595,9 @@ NIIT Tech 0.21
 Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
+
+1.47
+1.47
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -757,4 +764,10 @@ Honeywell Auto -1.08
 Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
+
+-1.61
+-2.84
+-1.61
+0.48
+0.21
 ----------------------------------------

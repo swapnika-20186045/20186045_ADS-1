@@ -21,9 +21,9 @@ class Stock implements Comparable<Stock> {
      * @param      stocknamee  The stocknamee
      * @param      changee     The changee
      */
-    Stock(final String stocknamee, final double changee) {
+    Stock(final String stocknamee, final String changee) {
         this.stockname = stocknamee;
-        this.change = changee;
+        this.change = Double.parseDouble(changee);
     }
     /**
      * Gets the name of the stock.
@@ -106,8 +106,7 @@ public final class Solution {
             MaxPQ<Stock> max = new MaxPQ<>();
             while (count < n) {
                 String[] tokens = scan.nextLine().split(",");
-                Stock stocks = new Stock(tokens[0],
-                                         Double.parseDouble(tokens[1]));
+                Stock stocks = new Stock(tokens[0], tokens[1]);
                 min.insert(stocks);
                 max.insert(stocks);
                 count++;
@@ -125,27 +124,31 @@ public final class Solution {
             }
             System.out.println();
         }
-        // int num = Integer.parseInt(scan.nextLine());
-        // while (num > 0) {
-        //     String[] tokens = scan.nextLine().split(",");
-        //     switch (tokens[0]) {
-        //     case "get" :
-        //         if (tokens[1].equals("MaxST")) {
-        //             if (best.contains(tokens[2])) {
-        //                 System.out.println(best.get(tokens[2]));
-        //             } else {
-        //                 System.out.println("0");
-        //             }
+        int num = Integer.parseInt(scan.nextLine());
+        while (num > 0) {
+            String[] tokens = scan.nextLine().split(",");
+            switch (tokens[0]) {
+            case "get" :
+                if (tokens[1].equals("MaxST")) {
+                    if (best.contains(tokens[2])) {
+                        System.out.println(best.get(tokens[2]));
+                    // } else {
+                    //     System.out.println("0");
+                    }
 
-        //         } else {
-        //             if (worst.contains(tokens[2])) {
-        //                 System.out.println(worst.get(tokens[2]));
-        //             } else {
-        //                 System.out.println("0");
-        //             }
-        //         }
-        //         break;
-            // }
-        // }
+                } else {
+                    if (worst.contains(tokens[2])) {
+                        System.out.println(worst.get(tokens[2]));
+                    // } else {
+                    //     System.out.println("0");
+                    // }
+                    }
+                }
+                break;
+                default :
+                break;
+            }
+            num--;
+        }
     }
 }
