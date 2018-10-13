@@ -14,14 +14,14 @@ class Stock implements Comparable<Stock> {
     /**
      * change in stock value.
      */
-    private Double change;
+    private int change;
     /**
      * Constructs the object.
      *
      * @param      stocknamee  The stocknamee
      * @param      changee     The changee
      */
-    Stock(final String stocknamee, final Double changee) {
+    Stock(final String stocknamee, final int changee) {
         this.stockname = stocknamee;
         this.change = changee;
     }
@@ -38,7 +38,7 @@ class Stock implements Comparable<Stock> {
      *
      * @return     The change.
      */
-    public Double getChange() {
+    public int getChange() {
         return this.change;
     }
     /**
@@ -98,6 +98,8 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
+            BinarySearchST<String, Integer> best = new  BinarySearchST<>();
+            BinarySearchST<String, Integer> worst = new BinarySearchST<>();
         for (int i = 0; i < SIX; i++) {
             int count = 0;
             MinPQ<Stock> min = new MinPQ<>();
@@ -105,13 +107,11 @@ public final class Solution {
             while (count < n) {
                 String[] tokens = scan.nextLine().split(",");
                 Stock stocks = new Stock(tokens[0],
-                    Double.parseDouble(tokens[1]));
+                                         Integer.parseInt(tokens[1]));
                 min.insert(stocks);
                 max.insert(stocks);
                 count++;
             }
-            BinarySearchST<String, Double> best = new  BinarySearchST<>();
-            BinarySearchST<String, Double> worst = new BinarySearchST<>();
             for (int j = 0; j < FIVE; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
@@ -125,5 +125,27 @@ public final class Solution {
             }
             System.out.println();
         }
+        // int num = Integer.parseInt(scan.nextLine());
+        // while (num > 0) {
+        //     String[] tokens = scan.nextLine().split(",");
+        //     switch (tokens[0]) {
+        //     case "get" :
+        //         if (tokens[1].equals("MaxST")) {
+        //             if (best.contains(tokens[2])) {
+        //                 System.out.println(best.get(tokens[2]));
+        //             } else {
+        //                 System.out.println("0");
+        //             }
+
+        //         } else {
+        //             if (worst.contains(tokens[2])) {
+        //                 System.out.println(worst.get(tokens[2]));
+        //             } else {
+        //                 System.out.println("0");
+        //             }
+        //         }
+        //         break;
+            // }
+        // }
     }
 }
