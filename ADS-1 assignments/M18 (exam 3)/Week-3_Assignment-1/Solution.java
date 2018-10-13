@@ -98,8 +98,8 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        BinarySearchST<String, Integer> best = new  BinarySearchST<>();
-        BinarySearchST<String, Integer> worst = new BinarySearchST<>();
+        BinarySearchST best = new  BinarySearchST(n);
+        BinarySearchST worst = new BinarySearchST(n);
         for (int i = 0; i < SIX; i++) {
             int count = 0;
             MinPQ<Stock> min = new MinPQ<>();
@@ -151,6 +151,13 @@ public final class Solution {
                     } else {
                         System.out.println(
                             worst.get(queries[2]));
+                    }
+                }
+            } else {
+                String[] keys = best.keys();
+                for (String each : keys) {
+                    if (worst.contains(each)) {
+                        System.out.println(each);
                     }
                 }
             }
