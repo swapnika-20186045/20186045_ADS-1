@@ -106,7 +106,8 @@ public final class Solution {
             MaxPQ<Stock> max = new MaxPQ<>();
             while (count < n) {
                 String[] tokens = scan.nextLine().split(",");
-                Stock stocks = new Stock(tokens[0], Float.parseFloat(tokens[1]));
+                Stock stocks = new Stock(tokens[0],
+                    Float.parseFloat(tokens[1]));
                 min.insert(stocks);
                 max.insert(stocks);
                 count++;
