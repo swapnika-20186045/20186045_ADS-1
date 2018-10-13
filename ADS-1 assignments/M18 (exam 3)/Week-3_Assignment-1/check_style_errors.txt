@@ -1,12 +1,10 @@
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:9:22: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:10:35: '6' is a magic number. [MagicNumber]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:11:30: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:10:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:16:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:17:35: '6' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:18:30: 'while' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 7 errors.
