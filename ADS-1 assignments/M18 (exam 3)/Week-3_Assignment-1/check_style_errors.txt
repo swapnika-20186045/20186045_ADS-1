@@ -1,4 +1,6 @@
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:25:23: '6' is a magic number. [MagicNumber]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:24:31: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:26: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M18 (exam 3)\Week-3_Assignment-1\Solution.java:27:34: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 3 errors.

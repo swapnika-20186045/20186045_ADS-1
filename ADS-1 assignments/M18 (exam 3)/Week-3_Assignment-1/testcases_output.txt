@@ -72,7 +72,26 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
-
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -148,7 +167,16 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
-
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -229,7 +257,26 @@ WABCO India 0.33
 1
 3
 Your Output: 
-
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -310,7 +357,16 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
-
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -406,5 +462,24 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
-
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
+BinarySearchST@b684286
 ----------------------------------------
