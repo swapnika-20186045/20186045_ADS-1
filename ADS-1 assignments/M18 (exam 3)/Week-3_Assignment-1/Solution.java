@@ -79,11 +79,11 @@ public final class Solution {
     /**
      * declaration of number.
      */
-    private static int FIVE = 5;
+    private static final int FIVE = 5;
     /**
      * declaration of number.
      */
-    private static int SIX = 6;
+    private static final int SIX = 6;
     /**
      * Constructs the object.
      */
