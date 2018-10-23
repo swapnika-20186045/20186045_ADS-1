@@ -152,23 +152,34 @@ class BinarySearchTree {
     }
     /**
      * get method.
+     *
      * @param      key   The key
      *
-     * @return  integer.
+     * @return     { description_of_the_return_value }
      */
     public int get(final Book key) {
-        Node x = root;
-        while (x != null) {
-            int cmp = key.compareTo(x.key);
-            if (cmp < 0) {
-                x = x.left;
-            } else if (cmp > 0) {
-                x = x.right;
-            } else if (cmp == 0) {
-                return x.value;
-            }
+        return get(root, key);
+    }
+    /**
+     * get method.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int get(final Node x, final Book key) {
+        // if (x == null) {
+        //     return null;
+        // }
+        int cmp = key.compareTo(x.key);
+        if (cmp < 0) {
+            return get(x.left, key);
+        } else if (cmp > 0) {
+            return get(x.right, key);
+        } else {
+            return x.value;
         }
-        return -1;
     }
     /**
      * put method to insert the key, value.
@@ -195,7 +206,7 @@ class BinarySearchTree {
             x.left = put(x.left, key, value);
         } else if (cmp > 0) {
             x.right = put(x.right, key, value);
-        } else if (cmp == 0) {
+        } else {
             x.value = value;
         }
         return x;
