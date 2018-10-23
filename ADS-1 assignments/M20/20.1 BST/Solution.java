@@ -152,34 +152,23 @@ class BinarySearchTree {
     }
     /**
      * get method.
-     *
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return  integer.
      */
     public int get(final Book key) {
-        return get(root, key);
-    }
-    /**
-     * get method.
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int get(final Node x, final Book key) {
-        // if (x == null) {
-        //     return null;
-        // }
-        int cmp = key.compareTo(x.key);
-        if (cmp < 0) {
-            return get(x.left, key);
-        } else if (cmp > 0) {
-            return get(x.right, key);
-        } else {
-            return x.value;
+        Node x = root;
+        while (x != null) {
+            int cmp = key.compareTo(x.key);
+            if (cmp < 0) {
+                x = x.left;
+            } else if (cmp > 0) {
+                x = x.right;
+            } else if (cmp == 0) {
+                return x.value;
+            }
         }
+        return -1;
     }
     /**
      * put method to insert the key, value.
@@ -206,7 +195,7 @@ class BinarySearchTree {
             x.left = put(x.left, key, value);
         } else if (cmp > 0) {
             x.right = put(x.right, key, value);
-        } else {
+        } else if (cmp == 0) {
             x.value = value;
         }
         return x;
@@ -391,54 +380,13 @@ class BinarySearchTree {
         }
     }
     /**
-     * Delete the element.
-     *
-     * @param      key   The key
-     */
-    public void delete(final Book key) {
-        root = delete(root, key);
-    }
-    /**
-     * Delete the element.
-     *
-     * @param      x     { parameter_description }
-     * @param      key   The key
-     *
-     * @return     { description_of_the_return_value }
-     */
-    private Node delete(final Node x, final Book key) {
-        Node x1 = x;
-        if (x1 == null) {
-            return null;
-        }
-        int cmp = key.compareTo(x1.key);
-        if (cmp < 0) {
-            x1.left = delete(x1.left, key);
-        } else if (cmp > 0) {
-            x1.right = delete(x1.right, key);
-        } else {
-            if (x1.right == null) {
-                return x1.left;
-            }
-            if (x1.left == null) {
-                return x1.right;
-            }
-            Node t = x1;
-            x1 = min(t.right);
-            x1.right = deleteMin(t.right);
-            x1.left = t.left;
-        }
-        x1.size = size(x.left) + size(x.right) + 1;
-        return x1;
-    }
-    /**
-     * Delete minimun value.
+     * delete the minimum value.
      */
     public void deleteMin() {
         root = deleteMin(root);
     }
     /**
-     * Delete minimun value.
+     * delete the minimum value.
      *
      * @param      x     { parameter_description }
      *
@@ -453,13 +401,13 @@ class BinarySearchTree {
         return x;
     }
     /**
-     * Delete maximum value.
+     * delete the maximum value.
      */
     public void deleteMax() {
         root = deleteMax(root);
     }
     /**
-     * Delete maximum value.
+     * delete the maximum value.
      *
      * @param      x     { parameter_description }
      *
@@ -470,6 +418,44 @@ class BinarySearchTree {
             return x.left;
         }
         x.right = deleteMax(x.right);
+        x.size = size(x.left) + size(x.right) + 1;
+        return x;
+    }
+    /**
+     * delete the element.
+     *
+     * @param      key   The key
+     */
+    public void delete(final Book key) {
+        root = delete(root, key);
+    }
+    /**
+     * delete the element.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node delete(Node x, final Book key) {
+        if (x == null) return null;
+        int cmp = key.compareTo(x.key);
+        if      (cmp < 0) {
+            x.left  = delete(x.left,  key);
+        } else if (cmp > 0) {
+            x.right = delete(x.right, key);
+        } else {
+            if (x.right == null) {
+                return x.left;
+            }
+            if (x.left  == null) {
+                return x.right;
+            }
+            Node t = x;
+            x = min(t.right);
+            x.right = deleteMin(t.right);
+            x.left = t.left;
+        }
         x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
@@ -528,16 +514,16 @@ public final class Solution {
                     Float.parseFloat(tokens[2 + 1]));
                 System.out.println(bst.ceiling(obj));
                 break;
-            case "delete":
-                obj = new Book(tokens[1], tokens[2],
-                    Float.parseFloat(tokens[2 + 1]));
-                bst.delete(obj);
             case "deleteMax":
                 bst.deleteMax();
                 break;
             case "deleteMin":
                 bst.deleteMin();
                 break;
+            case "delete":
+                obj = new Book(tokens[1], tokens[2],
+                    Float.parseFloat(tokens[2 + 1]));
+                bst.delete(obj);
             default:
                 break;
             }
