@@ -1,5 +1,4 @@
 Starting audit...
 [ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:440:25: Parameter x should be final. [FinalParameters]
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M20\20.1 BST\Solution.java:441: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
