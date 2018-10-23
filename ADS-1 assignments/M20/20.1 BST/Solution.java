@@ -437,29 +437,30 @@ class BinarySearchTree {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node delete(Node x, final Book key) {
-        if (x == null) {
+    private Node delete(final Node x, final Book key) {
+        Node x1 = x;
+        if (x1 == null) {
             return null;
         }
-        int cmp = key.compareTo(x.key);
-        if      (cmp < 0) {
-            x.left  = delete(x.left,  key);
+        int cmp = key.compareTo(x1.key);
+        if (cmp < 0) {
+            x1.left = delete(x1.left, key);
         } else if (cmp > 0) {
-            x.right = delete(x.right, key);
+            x1.right = delete(x1.right, key);
         } else {
-            if (x.right == null) {
-                return x.left;
+            if (x1.right == null) {
+                return x1.left;
             }
-            if (x.left  == null) {
-                return x.right;
+            if (x1.left == null) {
+                return x1.right;
             }
-            Node t = x;
-            x = min(t.right);
-            x.right = deleteMin(t.right);
-            x.left = t.left;
+            Node t = x1;
+            x1 = min(t.right);
+            x1.right = deleteMin(t.right);
+            x1.left = t.left;
         }
-        x.size = size(x.left) + size(x.right) + 1;
-        return x;
+        x1.size = size(x.left) + size(x.right) + 1;
+        return x1;
     }
 }
 /**
