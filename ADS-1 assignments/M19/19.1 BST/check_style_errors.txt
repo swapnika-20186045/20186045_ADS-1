@@ -1,0 +1,12 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:28:23: 'name' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:29:30: 'author' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:29:50: 'price' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:117:33: 'key' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:117:48: 'value' hides a field. [HiddenField]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:405: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:409: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:426: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M19\19.1 BST\Solution.java:430: Line is longer than 80 characters (found 86). [LineLength]
+Audit done.
+Checkstyle ends with 9 errors.
