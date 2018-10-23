@@ -21,15 +21,15 @@ class Book implements Comparable {
     /**
      * Constructs the object.
      *
-     * @param      name    The name
-     * @param      author  The author
-     * @param      price   The price
+     * @param      namee    The namee
+     * @param      authorr  The authorr
+     * @param      pricee   The pricee
      */
-    Book(final String name,
-                final String author, final float price) {
-        this.name = name;
-        this.author = author;
-        this.price = price;
+    Book(final String namee,
+                final String authorr, final float pricee) {
+        this.name = namee;
+        this.author = authorr;
+        this.price = pricee;
     }
     /**
      * Gets the name.
@@ -110,13 +110,13 @@ class BinarySearchTree {
         /**
          * Constructs the object.
          *
-         * @param      key   The key
-         * @param      value  The valueue
+         * @param      keyy   The key
+         * @param      valuee  The valueue
          * @param s int size
          */
-        private Node(final Book key, final int value, final int s) {
-            this.key = key;
-            this.value = value;
+        private Node(final Book keyy, final int valuee, final int s) {
+            this.key = keyy;
+            this.value = valuee;
             this.size = s;
             left = null;
             right = null;
@@ -402,11 +402,13 @@ public final class Solution {
             String[] tokens = scan.nextLine().split(",");
             switch (tokens[0]) {
             case "put":
-                Book obj = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[2 + 1]));
+                Book obj = new Book(tokens[1], tokens[2],
+                    Float.parseFloat(tokens[2 + 1]));
                 bst.put(obj, Integer.parseInt(tokens[2 + 2]));
                 break;
             case "get":
-                obj = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[2 + 1]));
+                obj = new Book(tokens[1], tokens[2],
+                    Float.parseFloat(tokens[2 + 1]));
                 if (bst.get(obj) == -1) {
                     System.out.println("null");
                 } else {
@@ -423,11 +425,13 @@ public final class Solution {
                 System.out.println(bst.select(Integer.parseInt(tokens[1])));
                 break;
             case "floor":
-                obj = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[2 + 1]));
+                obj = new Book(tokens[1], tokens[2],
+                    Float.parseFloat(tokens[2 + 1]));
                 System.out.println(bst.floor(obj));
                 break;
             case "ceiling":
-                obj = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[2 + 1]));
+                obj = new Book(tokens[1], tokens[2],
+                    Float.parseFloat(tokens[2 + 1]));
                 System.out.println(bst.ceiling(obj));
                 break;
             default:
