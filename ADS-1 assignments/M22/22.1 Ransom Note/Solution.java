@@ -167,6 +167,15 @@ class SeparateChainingHashST<Key, Value> {
      */
     private static final int INIT_CAPACITY = 4;
     /**
+     * declaration of variable.
+     */
+    private static final int VALUE = 0x7fffffff;
+    /**
+     * declaration of variable.
+     */
+    private static final int TEN = 10;
+
+    /**
      * number of key-value pairs.
      */
     private int n;
@@ -196,7 +205,7 @@ class SeparateChainingHashST<Key, Value> {
         }
     }
     /**
-     * resize the hash table to have the given number of chains,
+     * resize the hash table to have the given number of chains.
      * rehashing all of the keys
      *
      * @param      chains  The chains
@@ -222,7 +231,7 @@ class SeparateChainingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private int hash(final Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        return (key.hashCode() & VALUE) % m;
     }
 
     /**
@@ -299,11 +308,13 @@ class SeparateChainingHashST<Key, Value> {
         }
 
         // double table size if average length of list >= 10
-        if (n >= 10 * m) {
+        if (n >= TEN * m) {
             resize(2 * m);
         }
         int i = hash(key);
-        if (!st[i].contains(key)) n++;
+        if (!st[i].contains(key)) {
+            n++;
+        }
         st[i].put(key, val);
     }
 
@@ -339,8 +350,9 @@ class SeparateChainingHashST<Key, Value> {
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++) {
-            for (Key key : st[i].keys())
+            for (Key key : st[i].keys()) {
                 queue.enqueue(key);
+            }
         }
         return queue;
     }
@@ -376,7 +388,7 @@ public final class Solution {
 
         String[] strarr = scan.nextLine().split(" ");
         for (int i = 0; i < strarr.length; i++) {
-            if (hash.contains(strarr[i]) ) {
+            if (hash.contains(strarr[i])) {
                 if (hash.get(strarr[i]) == 0) {
                     System.out.print("No");
                     return;
