@@ -122,11 +122,14 @@ class SequentialSearchST<Key, Value> {
     public void delete(final Key key) {
         first = delete(first, key);
     }
-
-    // warning: function call stack too large if table is large
     /**
-    * delete key in linked list beginning at Node x.
-    **/
+     * delete method.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node delete(final Node x, final Key key) {
         if (x == null) {
             return null;
@@ -188,11 +191,16 @@ class SeparateChainingHashST<Key, Value> {
     SeparateChainingHashST(final int m1) {
         this.m = m1;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < m; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
+        }
     }
-    // resize the hash table to have the given number of chains,
-    // rehashing all of the keys
+    /**
+     * resize the hash table to have the given number of chains,
+     * rehashing all of the keys
+     *
+     * @param      chains  The chains
+     */
     private void resize(final int chains) {
         SeparateChainingHashST<Key, Value> temp = new
         SeparateChainingHashST<Key, Value>(chains);
@@ -206,7 +214,13 @@ class SeparateChainingHashST<Key, Value> {
         this.st = temp.st;
     }
 
-    // hash value between 0 and m-1
+    /**
+     * hash value between 0 and m-1.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private int hash(final Key key) {
         return (key.hashCode() & 0x7fffffff) % m;
     }
@@ -275,8 +289,10 @@ class SeparateChainingHashST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(final Key key, final Value val) {
-        if (key == null) throw new IllegalArgumentException(
+        if (key == null) {
+            throw new IllegalArgumentException(
                 "first argument to put() is null");
+        }
         if (val == null) {
             delete(key);
             return;
