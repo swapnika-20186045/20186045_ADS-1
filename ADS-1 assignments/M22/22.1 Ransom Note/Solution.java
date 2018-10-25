@@ -190,7 +190,7 @@ class SeparateChainingHashST<Key, Value> {
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
         for (int i = 0; i < m; i++)
             st[i] = new SequentialSearchST<Key, Value>();
-    } 
+    }
     // resize the hash table to have the given number of chains,
     // rehashing all of the keys
     private void resize(final int chains) {
@@ -209,7 +209,7 @@ class SeparateChainingHashST<Key, Value> {
     // hash value between 0 and m-1
     private int hash(final Key key) {
         return (key.hashCode() & 0x7fffffff) % m;
-    } 
+    }
 
     /**
      * Returns the number of key-value pairs in this symbol table.
@@ -218,7 +218,7 @@ class SeparateChainingHashST<Key, Value> {
      */
     public int size() {
         return n;
-    } 
+    }
 
     /**
      * Returns true if this symbol table is empty.
@@ -241,10 +241,10 @@ class SeparateChainingHashST<Key, Value> {
     public boolean contains(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException(
-            "argument to contains() is null");
+                "argument to contains() is null");
         }
         return get(key) != null;
-    } 
+    }
 
     /**
      * Returns the value associated with the specified key in this symbol
@@ -261,7 +261,7 @@ class SeparateChainingHashST<Key, Value> {
         }
         int i = hash(key);
         return st[i].get(key);
-    } 
+    }
 
     /**
      * Inserts the specified key-value pair into the symbol table,
@@ -276,38 +276,44 @@ class SeparateChainingHashST<Key, Value> {
      */
     public void put(final Key key, final Value val) {
         if (key == null) throw new IllegalArgumentException(
-            "first argument to put() is null");
+                "first argument to put() is null");
         if (val == null) {
             delete(key);
             return;
         }
 
         // double table size if average length of list >= 10
-        if (n >= 10*m) resize(2*m);
-
+        if (n >= 10 * m) {
+            resize(2 * m);
+        }
         int i = hash(key);
         if (!st[i].contains(key)) n++;
         st[i].put(key, val);
-    } 
+    }
 
     /**
      * Removes the specified key and its associated value from this symbol
-     * table    
-     * (if the key is in this symbol table).    
+     * table
+     * (if the key is in this symbol table).
      *
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void delete(final Key key) {
-        if (key == null) throw new IllegalArgumentException(
-            "argument to delete() is null");
-
+        if (key == null) {
+            throw new IllegalArgumentException(
+                "argument to delete() is null");
+        }
         int i = hash(key);
-        if (st[i].contains(key)) n--;
+        if (st[i].contains(key)) {
+            n--;
+        }
         st[i].delete(key);
 
         // halve table size if average length of list <= 2
-        if (m > INIT_CAPACITY && n <= 2*m) resize(m/2);
+        if (m > INIT_CAPACITY && n <= 2 * m) {
+            resize(m / 2);
+        }
     }
     /**
      * return keys in symbol table as an Iterable.
@@ -326,7 +332,7 @@ class SeparateChainingHashST<Key, Value> {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -341,12 +347,12 @@ public class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         SeparateChainingHashST<String, Integer> hash = new
-                    SeparateChainingHashST<String, Integer>();
+        SeparateChainingHashST<String, Integer>();
         String integer = scan.nextLine();
         String[] arr = scan.nextLine().split(" ");
-        for(int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (hash.contains(arr[i])) {
-                hash.put(arr[i], hash.get(arr[i]) + 1); 
+                hash.put(arr[i], hash.get(arr[i]) + 1);
             } else {
                 hash.put(arr[i], 1);
             }
@@ -355,7 +361,7 @@ public class Solution {
         String[] strarr = scan.nextLine().split(" ");
         for (int i = 0; i < strarr.length; i++) {
             if (hash.contains(strarr[i]) ) {
-                if(hash.get(strarr[i]) == 0) {
+                if (hash.get(strarr[i]) == 0) {
                     System.out.print("No");
                     return;
                 } else {
