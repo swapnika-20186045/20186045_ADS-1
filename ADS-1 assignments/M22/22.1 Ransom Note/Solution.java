@@ -40,7 +40,7 @@ class SequentialSearchST<Key, Value> {
          * @param      vall   The value
          * @param      nextt  The next
          */
-        public Node(final Key keyy, final Value vall, final Node nextt)  {
+        Node(final Key keyy, final Value vall, final Node nextt)  {
             this.key  = keyy;
             this.val  = vall;
             this.next = nextt;
@@ -49,7 +49,7 @@ class SequentialSearchST<Key, Value> {
     /**
      * Initializes an empty symbol table.
      */
-    public SequentialSearchST() {
+    SequentialSearchST() {
         //empty constructor.
     }
     /**
@@ -85,8 +85,9 @@ class SequentialSearchST<Key, Value> {
      */
     public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
-            if (key.equals(x.key))
+            if (key.equals(x.key)) {
                 return x.val;
+            }
         }
         return null;
     }
@@ -122,10 +123,14 @@ class SequentialSearchST<Key, Value> {
         first = delete(first, key);
     }
 
-    // delete key in linked list beginning at Node x
     // warning: function call stack too large if table is large
+    /**
+    * delete key in linked list beginning at Node x.
+    **/
     private Node delete(final Node x, final Key key) {
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         if (key.equals(x.key)) {
             n--;
             return x.next;
@@ -141,8 +146,9 @@ class SequentialSearchST<Key, Value> {
      */
     public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
-        for (Node x = first; x != null; x = x.next)
+        for (Node x = first; x != null; x = x.next) {
             queue.enqueue(x.key);
+        }
         return queue;
     }
 }
@@ -172,15 +178,15 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * Initializes an empty symbol table.
      */
-    public SeparateChainingHashST() {
+    SeparateChainingHashST() {
         this(INIT_CAPACITY);
     }
     /**
      * Initializes an empty symbol table with {@code m} chains.
-     * @param m the initial number of chains
+     * @param m1 the initial number of chains
      */
-    public SeparateChainingHashST(final int m) {
-        this.m = m;
+    SeparateChainingHashST(final int m1) {
+        this.m = m1;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
         for (int i = 0; i < m; i++)
             st[i] = new SequentialSearchST<Key, Value>();
@@ -233,8 +239,10 @@ class SeparateChainingHashST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(final Key key) {
-        if (key == null) throw new IllegalArgumentException(
+        if (key == null) {
+            throw new IllegalArgumentException(
             "argument to contains() is null");
+        }
         return get(key) != null;
     } 
 
@@ -248,7 +256,9 @@ class SeparateChainingHashST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(final Key key) {
-        if (key == null) throw new IllegalArgumentException("key is null");
+        if (key == null) {
+            throw new IllegalArgumentException("key is null");
+        }
         int i = hash(key);
         return st[i].get(key);
     } 
