@@ -2,8 +2,6 @@
  * Ransom Note.
  */
 import java.util.Scanner;
-import java.lang.Iterable;
-import java.util.Iterator;
 /**
  * Class for sequential search st.
  *
