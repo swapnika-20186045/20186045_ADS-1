@@ -17,25 +17,25 @@ public final class Solution {
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		LinearProbingHashST<String, Integer> obj
-		= new LinearProbingHashST<String, Integer>();
+		    = new LinearProbingHashST<String, Integer>();
 		int n = Integer.parseInt(scan.nextLine());
-		while(n>0) {
+		while (n > 0) {
 			String[] tokens = scan.nextLine().split(" ");
-			switch(tokens[0]) {
-				case "put" :
-					obj.put(tokens[1], Integer.parseInt(tokens[2]));
-					break;
-				case "get" :
-					System.out.println(obj.get(tokens[1]));
-					break;
-				case "display" :
-					System.out.println(obj.display());
-					break;
-				case "delete" :
-					obj.delete(tokens[1]);
-					break;
-				default:
-					break;
+			switch (tokens[0]) {
+			case "put" :
+				obj.put(tokens[1], Integer.parseInt(tokens[2]));
+				break;
+			case "get" :
+				System.out.println(obj.get(tokens[1]));
+				break;
+			case "display" :
+				System.out.println(obj.display());
+				break;
+			case "delete" :
+				obj.delete(tokens[1]);
+				break;
+			default:
+				break;
 			}
 			n--;
 		}

@@ -100,7 +100,7 @@ public class LinearProbingHashST<Key, Value> {
 
     // hash function for keys - returns value between 0 and M-1
     private int hash(Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        return (11 * key.hashCode()) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
@@ -226,7 +226,7 @@ public class LinearProbingHashST<Key, Value> {
 
         // check that hash table is at most 50% full
         if (m < 2 * n) {
-            System.err.println("Hash table size m = " + m + "; array size n = " + n);
+            System.out.println("Hash table size m = " + m + "; array size n = " + n);
             return false;
         }
 
@@ -234,7 +234,7 @@ public class LinearProbingHashST<Key, Value> {
         for (int i = 0; i < m; i++) {
             if (keys[i] == null) continue;
             else if (get(keys[i]) != vals[i]) {
-                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
+                System.out.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
                 return false;
             }
         }
@@ -256,5 +256,4 @@ public class LinearProbingHashST<Key, Value> {
         s += "}";
         return s;
     }
-
 }
