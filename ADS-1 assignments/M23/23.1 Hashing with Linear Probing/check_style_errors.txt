@@ -1,0 +1,9 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M23\23.1 Hashing with Linear Probing\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M23\23.1 Hashing with Linear Probing\Solution.java:22:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M23\23.1 Hashing with Linear Probing\Solution.java:22:24: '>' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M23\23.1 Hashing with Linear Probing\Solution.java:22:25: '>' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M23\23.1 Hashing with Linear Probing\Solution.java:24:31: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M23\23.1 Hashing with Linear Probing\Solution.java:26: Line is longer than 80 characters (found 88). [LineLength]
+Audit done.
+Checkstyle ends with 6 errors.
