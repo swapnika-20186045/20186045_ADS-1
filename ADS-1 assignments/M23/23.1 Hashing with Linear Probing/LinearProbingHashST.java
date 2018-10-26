@@ -241,6 +241,10 @@ public class LinearProbingHashST<Key, Value> {
         return true;
     }
     public String display() {
+        if (keys.length == 0) {
+            String s = "{}";
+            return s;
+        }
         String s = "{";
         int i;
         for (i = 0; i < keys.length - 1; i++) {
