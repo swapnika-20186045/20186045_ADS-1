@@ -29,7 +29,11 @@ public final class Solution {
 				System.out.println(obj.get(tokens[1]));
 				break;
 			case "display" :
+				try {
 				System.out.println(obj.display());
+				} catch(Exception ex) {
+					System.out.println("{}");
+				}
 				break;
 			case "delete" :
 				obj.delete(tokens[1]);
