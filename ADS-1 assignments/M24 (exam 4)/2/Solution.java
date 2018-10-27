@@ -16,14 +16,20 @@ class StudentData implements Comparable<StudentData> {
      */
     private double total;
     /**
+     * declaration of variable.
+     */
+    private int rollno;
+    /**
      * Constructs the object.
      *
      * @param      namee   The namee
      * @param      totall  The totall
+     * @param      rollnoo The rollnoo
      */
-    StudentData(final String namee, final String totall) {
+    StudentData(final String namee, final String totall, final String rollnoo) {
         this.name  = namee;
         this.total = Double.parseDouble(totall);
+        this.rollno = Integer.parseInt(rollnoo);
     }
     /**
      * Gets the name.
@@ -42,17 +48,37 @@ class StudentData implements Comparable<StudentData> {
         return total;
     }
     /**
+     * Gets the roll no.
+     *
+     * @return     The roll no.
+     */
+    public int getRollNo() {
+        return rollno;
+    }
+    /**
      * compare To.
      *
      * @param      that  The that
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(StudentData that) {
+    public int compareTo(final StudentData that) {
         if (this.total > that.total) {
             return 1;
         }
         if (this.total < that.total) {
+            return -1;
+        }
+        if (this.name.compareTo(that.name) > 0) {
+            return 1;
+        }
+        if (this.name.compareTo(that.name) < 0) {
+            return -1;
+        }
+        if (this.rollno > that.rollno) {
+            return 1;
+        }
+        if (this.rollno < that.rollno) {
             return -1;
         }
         return 0;
@@ -80,7 +106,7 @@ public final class Solution {
         StudentData s = null;
         while (input > 0) {
             String[] num = scan.nextLine().split(",");
-            s = new StudentData(num[1], num[2]);
+            s = new StudentData(num[1], num[2], num[0]);
             student.put(s, Integer.parseInt(num[0]));
             input--;
         }

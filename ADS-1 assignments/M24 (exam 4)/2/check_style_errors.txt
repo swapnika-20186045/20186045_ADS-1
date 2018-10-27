@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M24 (exam 4)\2\Solution.java:51:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 1 errors.
