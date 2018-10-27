@@ -25,9 +25,19 @@ class StudentData {
         this.name  = namee;
         this.total = Double.parseDouble(totall);
     }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return name;
     }
+    /**
+     * Gets the total.
+     *
+     * @return     The total.
+     */
     public double getTotal() {
         return total;
     }
@@ -35,7 +45,7 @@ class StudentData {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -50,7 +60,8 @@ public class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int input = Integer.parseInt(scan.nextLine());
-        SeparateChainingHashST<Integer, StudentData> student = new SeparateChainingHashST<>();
+        SeparateChainingHashST<Integer, StudentData> student = new
+        SeparateChainingHashST<>();
         StudentData s = null;
         while (input > 0) {
             String[] num = scan.nextLine().split(",");
