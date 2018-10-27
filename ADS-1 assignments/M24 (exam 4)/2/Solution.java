@@ -69,12 +69,12 @@ class StudentData implements Comparable<StudentData> {
         if (this.total < that.total) {
             return -1;
         }
-        if (this.name.compareTo(that.name) > 0) {
-            return 1;
-        }
-        if (this.name.compareTo(that.name) < 0) {
-            return -1;
-        }
+        // if (this.name.compareTo(that.name) > 0) {
+        //     return 1;
+        // }
+        // if (this.name.compareTo(that.name) < 0) {
+        //     return -1;
+        // }
         if (this.rollno > that.rollno) {
             return 1;
         }
