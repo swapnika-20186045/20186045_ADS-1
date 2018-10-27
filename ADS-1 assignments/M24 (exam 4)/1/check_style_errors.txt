@@ -1,0 +1,7 @@
+Starting audit...
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M24 (exam 4)\1\Solution.java:28:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M24 (exam 4)\1\Solution.java:31:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M24 (exam 4)\1\Solution.java:38: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\Users\vakac\Desktop\MSIT\ADS-1\ADS-1 assignments\M24 (exam 4)\1\Solution.java:53: Line is longer than 80 characters (found 94). [LineLength]
+Audit done.
+Checkstyle ends with 4 errors.
